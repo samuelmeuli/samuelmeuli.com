@@ -1,0 +1,50 @@
+.button {
+	border-radius: 50px;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 10px 12px;
+
+	// flexbox (for centering content)
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	.icon {
+		margin-right: 10px;
+	}
+
+	&:hover {
+		.icon {
+			fill: $color-text;
+		}
+	}
+}
+
+.button-linkedin {
+	.icon {
+		fill: $color-linkedin;
+	}
+
+	&:hover {
+		background-color: $color-linkedin;
+	}
+}
+
+.button-github {
+	.icon {
+		fill: $color-github;
+	}
+
+	&:hover {
+		background-color: $color-github;
+	}
+}
+
+.button-email {
+	.icon {
+		fill: $color-email;
+	}
+
+	&:hover {
+		background-color: $color-email;
+	}
+}
