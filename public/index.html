@@ -24,13 +24,18 @@
 		<meta name="msapplication-config" content="browserconfig.xml">
 		<meta name="theme-color" content="#172128">
 
-		<!-- Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108813941-1"></script>
+		<!-- Fathom (analytics) -->
 		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() { dataLayer.push(arguments); }
-			gtag('js', new Date());
-			gtag('config', 'UA-108813941-1', { 'anonymize_ip': true });
+			(function (f, a, t, h, o, m) {
+				a[h] = a[h] || function () {
+					(a[h].q = a[h].q || []).push(arguments)
+				};
+				o = f.createElement('script'),
+					m = f.getElementsByTagName('script')[0];
+				o.async = 1; o.src = t; o.id = 'fathom-script';
+				m.parentNode.insertBefore(o, m)
+			})(document, window, '//samuelmeuli.com/tracker.js', 'fathom');
+			fathom('trackPageview');
 		</script>
 	</head>
 
