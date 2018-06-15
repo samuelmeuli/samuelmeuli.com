@@ -1,5 +1,7 @@
-@import "external/normalize.css"; // external style reset (github.com/necolas/normalize.css)
-@import "partials/normalize-additions"; // own style reset additions
+// Reset
+@import "../node_modules/minireset.css/minireset.sass";
+
+// Styles
 @import "partials/variables";
 @import "partials/text";
 @import "partials/layout";
