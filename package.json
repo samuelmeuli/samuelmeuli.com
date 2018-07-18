@@ -10,13 +10,13 @@
 	"scripts": {
 		"start": "npm-run-all build --parallel start:*",
 		"start:sass": "node-sass styles/styles.scss public/styles.css --source-map true --watch",
-		"start:serve": "serve public",
+		"start:serve": "serve public --listen 3000",
 		"build": "node-sass styles/styles.scss public/styles.css --output-style compressed"
 	},
 	"devDependencies": {
 		"node-sass": "^4.9.0",
 		"npm-run-all": "^4.1.3",
-		"serve": "^8.2.0"
+		"serve": "^9.2.0"
 	},
 	"dependencies": {
 		"minireset.css": "0.0.3"
