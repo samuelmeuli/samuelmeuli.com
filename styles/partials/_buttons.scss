@@ -19,13 +19,13 @@
 	}
 }
 
-.button-linkedin {
+.button-email {
 	.icon {
-		fill: $color-linkedin;
+		fill: $color-email;
 	}
 
 	&:hover {
-		background-color: $color-linkedin;
+		background-color: $color-email;
 	}
 }
 
@@ -39,12 +39,22 @@
 	}
 }
 
-.button-email {
+.button-linkedin {
 	.icon {
-		fill: $color-email;
+		fill: $color-linkedin;
 	}
 
 	&:hover {
-		background-color: $color-email;
+		background-color: $color-linkedin;
+	}
+}
+
+.button-product-hunt {
+	.icon {
+		fill: $color-product-hunt;
+	}
+
+	&:hover {
+		background-color: $color-product-hunt;
 	}
 }

@@ -1,14 +1,17 @@
-// colors
-$color-text:        #E0E0E0;
-$color-background:  #232D34;
-$color-linkedin:    #0077B5;
-$color-github:      #6E5494;
-$color-email:       #B03A2E;
+// general colors
+$color-text: #E0E0E0;
+$color-background: #232D34;
+
+// button colors
+$color-email: #1E8449;
+$color-github: #6E5494;
+$color-linkedin: #0077B5;
+$color-product-hunt: #DA552F;
 
 // fonts
 @font-face {
 	font-family: Archive;
 	src: url(fonts/archive-font.otf);
 }
-$font-title:  'Archive', 'Source Sans Pro', sans-serif;
-$font-body:   'Source Sans Pro', sans-serif;
+$font-title: 'Archive', 'Source Sans Pro', sans-serif;
+$font-body: 'Source Sans Pro', sans-serif;
