@@ -11,7 +11,9 @@
 		"start": "npm-run-all build --parallel start:*",
 		"start:sass": "node-sass styles/styles.scss public/styles.css --source-map true --watch",
 		"start:serve": "serve public --listen 3000",
-		"build": "node-sass styles/styles.scss public/styles.css --output-style compressed"
+		"build": "run-s build:*",
+		"build:cleanup": "rm -f public/styles.*",
+		"build:sass": "node-sass styles/styles.scss public/styles.css --output-style compressed"
 	},
 	"devDependencies": {
 		"node-sass": "^4.9.0",
