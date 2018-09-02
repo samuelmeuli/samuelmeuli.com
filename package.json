@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "My personal website",
 	"private": true,
-	"author": "Samuel Meuli <dev@samuelmeuli.com>",
+	"author": "Samuel Meuli <me@samuelmeuli.com>",
 	"repository": "github:samuelmeuli/portfolio",
 	"homepage": "https://samuelmeuli.com",
 	"license": "MIT",
