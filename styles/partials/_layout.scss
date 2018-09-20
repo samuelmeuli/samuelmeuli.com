@@ -17,22 +17,13 @@ h1 {
 	margin-bottom: 50px;
 }
 
-// responsive button alignment (next to each other on large screens, below each other on small ones)
-li {
-	@media (max-width: 500px) {
-		display: block;
+.button-list {
+	display: grid;
+	grid-column-gap: 25px;
+	grid-row-gap: 10px;
 
-		& + & {
-			margin-top: 10px;
-		}
-	}
-
-	@media (min-width: 501px) {
-		display: inline;
-
-		& + & {
-			margin-left: 25px;
-		}
+	@media (min-width: 701px) {
+		grid-template-columns: repeat(4, auto);
 	}
 }
 
