@@ -9,16 +9,16 @@
 	"license": "MIT",
 	"scripts": {
 		"start": "npm-run-all build --parallel start:*",
-		"start:sass": "node-sass styles/styles.scss public/styles.css --source-map true --watch",
+		"start:sass": "node-sass styles --output public --recursive --source-map true --watch",
 		"start:serve": "serve public --listen 3000",
 		"build": "run-s build:*",
 		"build:cleanup": "rm -f public/styles.*",
-		"build:sass": "node-sass styles/styles.scss public/styles.css --output-style compressed"
+		"build:sass": "node-sass styles --output public --output-style compressed"
 	},
 	"devDependencies": {
 		"node-sass": "^4.9.0",
 		"npm-run-all": "^4.1.3",
-		"serve": "^9.2.0"
+		"serve": "^10.1.1"
 	},
 	"dependencies": {
 		"minireset.css": "0.0.3"
