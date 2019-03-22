@@ -1,0 +1,34 @@
+{
+	"name": "samuelmeuli.com",
+	"description": "My personal website",
+	"author": "Samuel Meuli <me@samuelmeuli.com>",
+	"repository": "github:samuelmeuli/samuelmeuli.com",
+	"homepage": "https://samuelmeuli.com",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"format": "prettier --write",
+		"lint": "stylelint --fix --syntax scss src/**/*.scss"
+	},
+	"devDependencies": {
+		"@samuelmeuli/stylelint-config": "~1.0.0",
+		"prettier": "1.16.4",
+		"stylelint": "^9.10.1"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.scss": [
+			"yarn format",
+			"yarn lint",
+			"git add"
+		],
+		"*.{html,json,md,yml}": [
+			"yarn format",
+			"git add"
+		]
+	}
+}
