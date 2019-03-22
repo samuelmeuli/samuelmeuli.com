@@ -1,0 +1,20 @@
+<head>
+	<!-- Meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="{{ .Description }}">
+
+	<!-- Site title -->
+	<title>{{ .Site.Title }}</title>
+
+	<!-- Favicons -->
+	{{ partial "head-favicons.html" . }}
+
+	<!-- Styles -->
+	{{ $scss := resources.Get "scss/main.scss" }}
+	{{ $styles := $scss | resources.ToCSS | resources.Minify }}
+	<style>{{ $styles.Content | safeCSS }}</style>
+
+	<!-- Scripts -->
+	{{ partial "head-scripts.html" . }}
+</head>

@@ -1,0 +1,17 @@
+{{ define "main" }}
+	<!-- Default template for list pages (e.g. list of posts) -->
+
+	<!-- Title and content of list page -->
+	<h2>{{ .Title }}</h2>
+	{{ .Content }}
+
+	<!-- List of pages -->
+	<ul>
+		{{ range .Pages }}
+			<li>
+				<a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }} | {{ .Title }}</a>
+			</li>
+		{{ end }}
+	</ul>
+
+{{ end }}
