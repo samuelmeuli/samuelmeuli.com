@@ -1,4 +1,4 @@
 title: Samuel Meuli
 baseURL: "https://samuelmeuli.com"
 languageCode: en-us
-theme: portfolio
+theme: hugo-starter-theme
