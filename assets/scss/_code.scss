@@ -1,6 +1,8 @@
 pre {
 	margin: $spacing-abs-medium 0;
-	padding: $spacing-abs-small;
+	padding: $spacing-abs-medium;
 	overflow-x: auto;
+	font-size: $font-size-small;
+	line-height: 1.7;
 	border-radius: $border-radius;
 }
