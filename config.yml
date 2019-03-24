@@ -27,7 +27,7 @@ params:
     - name: rss
       title: RSS
       iconPath: /icons/rss.svg
-      url: /blog/index.xml
+      url: /index.xml
     - name: email
       title: Email
       iconPath: /icons/email.svg
