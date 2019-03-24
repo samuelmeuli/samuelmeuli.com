@@ -1,0 +1,17 @@
+{{ define "main" }}
+	<!-- Project list page -->
+
+	<div class="project-section">
+		<!-- Title and content of list page -->
+		<h2 class="project-section-title">{{ .Title }}</h2>
+		{{ .Content }}
+
+		<!-- List of projects -->
+		<ul class="project-list">
+			{{ range .Pages }}
+				{{ partial "project-preview.html" . }}
+			{{ end }}
+		</ul>
+	</div>
+
+{{ end }}

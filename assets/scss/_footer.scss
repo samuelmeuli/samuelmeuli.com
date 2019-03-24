@@ -9,23 +9,6 @@ footer {
 .social-links {
 	text-align: center;
 
-	li {
-		display: inline-block;
-	}
-
-	li + li {
-		margin-left: $spacing-abs-medium;
-	}
-
-	.icon {
-		transition: $transition;
-		fill: $color-text;
-
-		&:hover {
-			fill: $color-main-hover;
-		}
-	}
-
 	// Imitate link for email (has no href)
 	.icon-email {
 		cursor: pointer;

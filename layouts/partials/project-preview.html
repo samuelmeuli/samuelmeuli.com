@@ -1,0 +1,24 @@
+<li class="project-preview">
+	<!-- Icon -->
+	<img src="/projects/{{ .Params.name }}/icon.svg" alt="{{ .Title }} icon" width="100" class="project-icon" />
+
+	<div>
+		<!-- Project name -->
+		<h3>
+			<a href="{{ .Params.website }}">{{ .Title }}</a>
+		</h3>
+
+		<!-- Date (month and year) -->
+		<p class="post-info">{{ .Date.Format "January 2006" }}</p>
+
+		<!-- Description -->
+		<p>{{ .Description }}</p>
+
+		<!-- Links -->
+		<ul class="project-links icon-list">
+			{{ with .Params.links }}
+				{{ partial "icon-list.html" . }}
+			{{ end }}
+		</ul>
+	</div>
+</li>

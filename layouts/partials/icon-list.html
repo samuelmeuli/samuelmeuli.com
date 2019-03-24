@@ -1,0 +1,24 @@
+{{ range . }}
+	<li>
+			<a
+				{{ if .email }}
+					onclick="sendEmail({{ .email.username }}, {{ .email.domain }})"
+				{{ else }}
+					href="{{ .url }}"
+				{{ end }}
+			>
+			<svg
+				viewBox="0 0 24 24"
+				width="35"
+				height="35"
+				class="icon icon-{{ .name }}"
+				title="{{ .title }}"
+			>
+				<use
+					xlink:href="/icons/{{ .name }}.svg#icon" {{/* SVG v1.1 (still required by Safari) */}}
+					href="/icons/{{ .name }}.svg#icon" {{/* SVG v2 */}}
+				/>
+			</svg>
+		</a>
+	</li>
+{{ end }}

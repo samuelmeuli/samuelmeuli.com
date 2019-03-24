@@ -1,0 +1,22 @@
+.icon-list {
+	a {
+		border: 0; // Remove underline
+	}
+
+	li {
+		display: inline-block;
+	}
+
+	li + li {
+		margin-left: $spacing-abs-small;
+	}
+}
+
+.icon {
+	transition: $transition;
+	fill: $color-text;
+
+	&:hover {
+		fill: $color-main-hover;
+	}
+}
