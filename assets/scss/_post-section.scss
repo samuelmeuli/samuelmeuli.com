@@ -1,0 +1,20 @@
+.post-section {
+	.post-info {
+		margin-bottom: $spacing-abs-small;
+		font-size: $font-size-small;
+
+		> * {
+			display: inline-block;
+		}
+	}
+
+	.post-categories {
+		li {
+			display: inline-block;
+		}
+
+		&::before {
+			content: " · ";
+		}
+	}
+}

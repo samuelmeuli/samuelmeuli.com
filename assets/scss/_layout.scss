@@ -12,3 +12,8 @@ main {
 	border-radius: $border-radius;
 	box-shadow: $box-shadow;
 }
+
+hr {
+	width: 50%;
+	margin: $spacing-abs-large auto;
+}
