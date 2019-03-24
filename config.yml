@@ -24,6 +24,10 @@ params:
       title: Product Hunt
       iconPath: /icons/product-hunt.svg
       url: "https://producthunt.com/@samuelmeuli"
+    - name: rss
+      title: RSS
+      iconPath: /icons/rss.svg
+      url: /blog/index.xml
     - name: email
       title: Email
       iconPath: /icons/email.svg
