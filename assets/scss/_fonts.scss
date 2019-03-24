@@ -1,0 +1,60 @@
+// Crimson Pro (serif)
+
+@font-face {
+	font-weight: 400;
+	font-family: "Crimson Pro";
+	font-style: normal;
+	src: local("Crimson Pro Regular"), local("CrimsonPro-Regular"),
+		url("/fonts/crimson-pro/CrimsonPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-weight: 400;
+	font-family: "Crimson Pro";
+	font-style: italic;
+	src: local("Crimson Pro Italic"), local("CrimsonPro-Italic"),
+		url("/fonts/crimson-pro/CrimsonPro-Italic.ttf") format("truetype");
+}
+
+body {
+	font-family: "Crimson Pro", serif;
+}
+
+// Fira Code (monospace)
+
+@font-face {
+	font-weight: 400;
+	font-family: "IBM Plex Mono";
+	font-style: normal;
+	src: local("IBM Plex Mono Regular"), local("IBMPlexMono-Regular"),
+		url("/fonts/ibm-plex-mono/IBMPlexMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-weight: 400;
+	font-family: "IBM Plex Mono";
+	font-style: italic;
+	src: local("IBM Plex Mono Italic"), local("IBMPlexMono-Italic"),
+		url("/fonts/ibm-plex-mono/IBMPlexMono-Italic.ttf") format("truetype");
+}
+
+pre,
+code {
+	font-family: "IBM Plex Mono", monospace;
+}
+
+// Inter (sans serif)
+
+@import url("https://rsms.me/inter/inter.css");
+
+h1,
+h2,
+h3,
+header,
+.post-info {
+	font-family: "Inter", sans-serif;
+
+	@supports (font-variation-settings: normal) {
+		font-family: "Inter var", sans-serif;
+	}
+}

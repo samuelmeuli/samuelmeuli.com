@@ -1,0 +1,14 @@
+body {
+	padding: $spacing-rel-large $spacing-rel-small;
+	background: $color-background;
+}
+
+main {
+	width: 850px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: $spacing-rel-medium;
+	background: $color-background-light;
+	border-radius: $border-radius;
+	box-shadow: $box-shadow;
+}

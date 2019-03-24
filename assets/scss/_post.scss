@@ -1,0 +1,19 @@
+article {
+	p + p {
+		margin-top: $spacing-abs-medium;
+	}
+
+	ol,
+	ul {
+		margin: $spacing-abs-small 0 $spacing-abs-small $spacing-abs-medium;
+	}
+
+	ul {
+		list-style-type: disc;
+	}
+
+	pre {
+		font-size: $font-size-small;
+		line-height: 1.7;
+	}
+}

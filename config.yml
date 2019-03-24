@@ -2,3 +2,6 @@ title: Samuel Meuli
 baseURL: "https://samuelmeuli.com"
 languageCode: en-us
 theme: hugo-starter-theme
+
+# Syntax highlighting
+pygmentsStyle: friendly
