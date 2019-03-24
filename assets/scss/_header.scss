@@ -1,11 +1,21 @@
 header {
-	margin-bottom: $spacing-rel-medium;
 	text-align: center;
 }
 
+body:not(.home) header {
+	margin-bottom: $spacing-rel-medium;
+}
+
+.home h1 {
+	margin: $spacing-rel-small 0;
+}
+
 nav {
-	margin-top: $spacing-abs-medium;
 	font-size: $font-size-h3;
+}
+
+body:not(.home) {
+	margin-top: $spacing-abs-medium;
 }
 
 .nav-item {
