@@ -33,12 +33,16 @@ h3 {
 }
 
 a {
-	color: inherit;
+	color: $color-main;
 	text-decoration: none;
-	border-bottom: 0.125em solid $color-main-hover;
 	transition: color $transition;
 
 	&:hover {
 		color: $color-main-hover;
 	}
+}
+
+main a {
+	color: inherit;
+	border-bottom: 0.125em solid $color-main-hover;
 }

@@ -1,12 +1,6 @@
 header {
 	margin-bottom: $spacing-rel-medium;
 	text-align: center;
-
-	// Do not underline links in header
-	a {
-		color: $color-main;
-		border: 0;
-	}
 }
 
 nav {

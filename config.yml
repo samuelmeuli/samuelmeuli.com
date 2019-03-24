@@ -3,5 +3,30 @@ baseURL: "https://samuelmeuli.com"
 languageCode: en-us
 theme: hugo-starter-theme
 
+author:
+  name: Samuel Meuli
+  homepage: "https://samuelmeuli.com"
+
 # Syntax highlighting
 pygmentsStyle: friendly
+
+params:
+  social:
+    - name: github
+      title: GitHub
+      iconPath: /icons/github.svg
+      url: "https://github.com/samuelmeuli"
+    - name: linkedin
+      title: LinkedIn
+      iconPath: /icons/linkedin.svg
+      url: "https://www.linkedin.com/in/samuelmeuli"
+    - name: product-hunt
+      title: Product Hunt
+      iconPath: /icons/product-hunt.svg
+      url: "https://producthunt.com/@samuelmeuli"
+    - name: email
+      title: Email
+      iconPath: /icons/email.svg
+      email:
+        username: me
+        domain: samuelmeuli.com

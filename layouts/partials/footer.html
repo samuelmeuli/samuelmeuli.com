@@ -1,0 +1,30 @@
+<footer>
+	<ul class="social-links">
+		{{ with .Site.Params.social }}
+			{{ range . }}
+				<li>
+					<a
+						{{ if .email }}
+							onclick="sendEmail({{ .email.username }}, {{ .email.domain }})"
+						{{ else }}
+							href="{{ .url }}"
+						{{ end }}
+					>
+						<svg
+							viewBox="0 0 24 24"
+							width="35"
+							height="35"
+							class="icon icon-{{ .name }}"
+							title="{{ .title }}"
+						>
+							<use
+								xlink:href="{{ .iconPath }}" {{/* SVG v1.1 (still required by Safari) */}}
+								href="{{ .iconPath }}#icon" {{/* SVG v2 */}}
+							/>
+						</svg>
+					</a>
+				</li>
+			{{ end }}
+		{{ end }}
+	</ul>
+</footer>
