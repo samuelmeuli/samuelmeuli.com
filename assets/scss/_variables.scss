@@ -8,17 +8,17 @@ $color-heading: #383b3f;
 
 // Fonts
 $font-size: 19px;
-$font-size-h1: 250%;
+$font-size-h1: 230%;
 $font-size-h2: 160%;
-$font-size-h3: 120%;
-$font-size-small: 75%;
+$font-size-h3: 115%;
+$font-size-small: 70%;
 $font-weight-normal: 300;
 $font-weight-bold: 500;
-$line-height: 1.8;
+$line-height: 1.75;
 
 // Spacing
-$spacing-abs-small: 7px;
-$spacing-abs-medium: 20px;
+$spacing-abs-small: 6px;
+$spacing-abs-medium: 30px;
 $spacing-abs-large: 40px;
 $spacing-rel-small: calc(#{$spacing-abs-small} + 1vw);
 $spacing-rel-medium: calc(#{$spacing-abs-medium} + 2vw);
@@ -27,4 +27,5 @@ $spacing-rel-large: calc(#{$spacing-abs-large} + 5vw);
 // Other
 $border-radius: 3px;
 $box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.025);
+$break-point: 600px;
 $transition: 0.3s;

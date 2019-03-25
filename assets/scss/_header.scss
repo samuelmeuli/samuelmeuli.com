@@ -4,27 +4,23 @@ header {
 
 body:not(.home) header {
 	margin-bottom: $spacing-rel-medium;
+	padding: $spacing-rel-small;
 }
 
 body:not(.home) h1 {
-	margin-bottom: $spacing-rel-small;
+	margin-bottom: $spacing-abs-medium;
 }
 
 .home h1 {
 	margin: $spacing-rel-medium 0;
 }
 
-nav {
-	font-size: $font-size-h3;
-}
-
-body:not(.home) {
-	margin-top: $spacing-abs-medium;
-}
-
 .nav-item {
 	display: inline-block;
-	padding: 0 $spacing-abs-medium;
+}
+
+.nav-item + .nav-item {
+	margin-left: $spacing-abs-medium;
 }
 
 .nav-item-active {

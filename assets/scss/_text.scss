@@ -16,19 +16,19 @@ h3 {
 
 h1 {
 	font-size: $font-size-h1;
-	line-height: 1.2;
+	line-height: 1.25;
 	letter-spacing: 0.05em;
 }
 
 h2 {
-	margin-bottom: $spacing-abs-large;
+	margin-bottom: $spacing-abs-medium;
 	font-size: $font-size-h2;
 	letter-spacing: 0.04em;
 	text-align: center;
 }
 
 h3 {
-	margin-top: $spacing-abs-large;
+	margin-top: $spacing-abs-medium;
 	margin-bottom: $spacing-abs-small;
 	font-size: $font-size-h3;
 	letter-spacing: 0.03em;
