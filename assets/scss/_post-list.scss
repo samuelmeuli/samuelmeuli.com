@@ -2,17 +2,27 @@
 	margin-bottom: $spacing-abs-small;
 	font-size: $font-size-small;
 
-	> * {
-		display: inline-block;
+	@include large-screen {
+		> * {
+			display: inline-block;
+		}
 	}
 }
 
 .post-categories {
-	li {
-		display: inline-block;
+	@include small-screen {
+		+ li::before {
+			content: " · ";
+		}
 	}
 
-	&::before {
-		content: " · ";
+	@include large-screen {
+		&::before {
+			content: " · ";
+		}
+	}
+
+	li {
+		display: inline-block;
 	}
 }
