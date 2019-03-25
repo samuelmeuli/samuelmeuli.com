@@ -16,18 +16,19 @@ h3 {
 
 h1 {
 	font-size: $font-size-h1;
+	line-height: 1.2;
 	letter-spacing: 0.05em;
 }
 
 h2 {
-	margin-bottom: $spacing-abs-small;
+	margin-bottom: $spacing-abs-large;
 	font-size: $font-size-h2;
 	letter-spacing: 0.04em;
 	text-align: center;
 }
 
 h3 {
-	margin-top: 1.5em;
+	margin-top: $spacing-abs-large;
 	margin-bottom: $spacing-abs-small;
 	font-size: $font-size-h3;
 	letter-spacing: 0.03em;
@@ -45,5 +46,5 @@ a {
 
 main a {
 	color: inherit;
-	border-bottom: 0.125em solid $color-main-hover;
+	border-bottom: 0.1em solid $color-main-hover;
 }

@@ -10,6 +10,10 @@
 	}
 }
 
+.post-title {
+	margin-bottom: $spacing-abs-small;
+}
+
 .post-content {
 	p + p {
 		margin-top: $spacing-abs-medium;

@@ -6,8 +6,12 @@ body:not(.home) header {
 	margin-bottom: $spacing-rel-medium;
 }
 
+body:not(.home) h1 {
+	margin-bottom: $spacing-rel-small;
+}
+
 .home h1 {
-	margin: $spacing-rel-small 0;
+	margin: $spacing-rel-medium 0;
 }
 
 nav {

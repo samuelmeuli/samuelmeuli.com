@@ -1,6 +1,11 @@
 <li class="project-preview">
 	<!-- Icon -->
-	<img src="/projects/{{ .Params.name }}/icon.svg" alt="{{ .Title }} icon" width="100" class="project-icon" />
+	<img
+		src="/projects/{{ .Params.name }}/icon.svg"
+		alt="{{ .Title }} icon"
+		width="80"
+		class="project-icon"
+	/>
 
 	<div>
 		<!-- Project name -->
@@ -8,17 +13,24 @@
 			<a href="{{ .Params.website }}">{{ .Title }}</a>
 		</h3>
 
-		<!-- Date (month and year) -->
-		<p class="post-info">{{ .Date.Format "January 2006" }}</p>
+		<div class="post-info">
+			<!-- Date (month and year) -->
+			<p>{{ .Date.Format "January 2006" }}</p>
+
+			<!-- Links -->
+			<ul class="post-categories">
+				{{ range $link, $category := .Params.links }}
+				{{- if gt $link 0 }}, {{ end -}}
+					<li>
+						<a href="{{ .url }}">
+							{{ .title }}
+						</a>
+					</li>
+				{{- end -}}
+			</ul>
+		</div>
 
 		<!-- Description -->
 		<p>{{ .Description }}</p>
-
-		<!-- Links -->
-		<ul class="project-links icon-list">
-			{{ with .Params.links }}
-				{{ partial "icon-list.html" . }}
-			{{ end }}
-		</ul>
 	</div>
 </li>

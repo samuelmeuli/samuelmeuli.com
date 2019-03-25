@@ -1,6 +1,11 @@
 .project-preview {
 	display: flex;
 	align-items: center;
+	margin-top: $spacing-abs-large;
+
+	h3 {
+		margin-top: 0;
+	}
 
 	.project-icon {
 		margin-right: $spacing-abs-large;
