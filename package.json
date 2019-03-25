@@ -10,7 +10,7 @@
 		"start": "hugo server --buildDrafts --port 3000",
 		"build": "run-s build:*",
 		"build:hugo": "hugo --minify",
-		"build:minify": "html-minifier --file-ext html --input-dir public --output-dir public --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true",
+		"build:minify": "html-minifier --file-ext html --input-dir public --output-dir public --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-js true",
 		"format": "prettier --write",
 		"lint": "stylelint --fix --syntax scss src/**/*.scss"
 	},
