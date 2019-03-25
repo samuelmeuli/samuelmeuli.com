@@ -4,7 +4,7 @@ This is the source code of my personal website, [samuelmeuli.com](https://samuel
 
 ## Development
 
-Make sure you have Hugo installed (`brew install hugo`). Node.js and Yarn are also required for linting and asset minification.
+Make sure you have Hugo installed (`brew install hugo`). Node.js and Yarn are required for linting and formatting.
 
 1. Clone this repository: `git clone REPO_URL`
 2. Install all dependencies: `yarn`
