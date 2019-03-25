@@ -4,8 +4,10 @@ name: lyrics-poster
 date: 2018-07-13
 description: Web app for creating artist posters written in their lyrics
 
-website: https://lyricsposter.net
 links:
+  - title: Website
+    name: website
+    url: https://lyricsposter.net
   - title: GitHub
     name: github
     url: https://github.com/samuelmeuli/lyrics-poster

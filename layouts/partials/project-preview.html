@@ -9,9 +9,7 @@
 
 	<div>
 		<!-- Project name -->
-		<h3>
-			<a href="{{ .Params.website }}">{{ .Title }}</a>
-		</h3>
+		<h3>{{ .Title }}</h3>
 
 		<div class="post-info">
 			<!-- Date (month and year) -->
@@ -20,7 +18,7 @@
 			<!-- Links -->
 			<ul class="post-categories">
 				{{ range $link, $category := .Params.links }}
-				{{- if gt $link 0 }}, {{ end -}}
+				{{- if gt $link 0 }} · {{ end -}}
 					<li>
 						<a href="{{ .url }}">
 							{{ .title }}

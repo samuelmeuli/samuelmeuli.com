@@ -4,8 +4,10 @@ name: mini-diary
 date: 2019-01-18
 description: Simple and secure journal app for macOS, Windows and Linux
 
-website: https://minidiary.app
 links:
+  - title: Website
+    name: website
+    url: https://minidiary.app
   - title: GitHub
     name: github
     url: https://github.com/samuelmeuli/mini-diary

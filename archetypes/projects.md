@@ -4,8 +4,10 @@ name: { { .Name } }
 date: { { now.Format "2006-01-02" } }
 description: ""
 
-website: ""
 links:
+  - title: Website
+    name: website
+    url: ""
   - title: GitHub
     name: github
     url: ""

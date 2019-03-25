@@ -33,18 +33,3 @@ h3 {
 	font-size: $font-size-h3;
 	letter-spacing: 0.03em;
 }
-
-a {
-	color: $color-main;
-	text-decoration: none;
-	transition: color $transition;
-
-	&:hover {
-		color: $color-main-hover;
-	}
-}
-
-main a {
-	color: inherit;
-	border-bottom: 0.1em solid $color-main-hover;
-}
