@@ -14,23 +14,21 @@ params:
   social:
     - name: github
       title: GitHub
-      iconPath: /icons/github.svg
       url: "https://github.com/samuelmeuli"
     - name: linkedin
       title: LinkedIn
-      iconPath: /icons/linkedin.svg
       url: "https://www.linkedin.com/in/samuelmeuli"
     - name: product-hunt
       title: Product Hunt
-      iconPath: /icons/product-hunt.svg
       url: "https://producthunt.com/@samuelmeuli"
+    - name: keybase
+      title: Keybase
+      url: "https://keybase.io/samuelmeuli"
     - name: rss
       title: RSS
-      iconPath: /icons/rss.svg
       url: /index.xml
     - name: email
       title: Email
-      iconPath: /icons/email.svg
       email:
         username: me
         domain: samuelmeuli.com
