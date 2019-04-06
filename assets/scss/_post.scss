@@ -15,6 +15,10 @@
 }
 
 .post-content {
+	h3 {
+		margin-bottom: $spacing-abs-small;
+	}
+
 	p + p {
 		margin-top: $spacing-abs-small;
 	}
