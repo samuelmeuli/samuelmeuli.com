@@ -7,8 +7,8 @@
 	"license": "MIT",
 	"private": true,
 	"scripts": {
-		"start": "hugo server --buildDrafts --port 3000",
-		"build": "hugo --minify",
+		"start": "hugo server --buildDrafts --buildFuture --port 3000",
+		"build": "hugo --buildFuture --minify",
 		"format": "prettier --write",
 		"lint": "stylelint --fix --syntax scss src/**/*.scss"
 	},
