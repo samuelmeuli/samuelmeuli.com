@@ -26,6 +26,9 @@ main {
 }
 
 hr {
-	width: 50%;
-	margin: $spacing-abs-large auto;
+	width: 300px;
+	max-width: 100%;
+	margin: 2 * $spacing-abs-large auto $spacing-abs-large;
+	border: 0;
+	border-top: 1.5px solid $color-text;
 }

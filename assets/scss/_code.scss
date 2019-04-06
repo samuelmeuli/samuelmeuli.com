@@ -1,8 +1,39 @@
-pre {
-	margin: $spacing-abs-medium 0;
-	padding: $spacing-abs-medium;
-	overflow-x: auto;
-	font-size: $font-size-small;
-	line-height: 1.7;
+code {
+	padding: 0.5px 5px;
+	font-size: 80%;
+	background: $color-background-code-inline;
 	border-radius: $border-radius;
+}
+
+// Code blocks
+
+.code-file-name,
+.highlight {
+	code {
+		background: none;
+	}
+}
+
+.code-file-name {
+	margin-top: $spacing-abs-medium;
+	margin-bottom: -$spacing-abs-medium;
+	padding: 0 $spacing-abs-small;
+	font-weight: $font-weight-bold;
+	background: $color-background-code-file-name;
+	border-radius: $border-radius $border-radius 0 0;
+}
+
+.highlight {
+	pre {
+		margin: $spacing-abs-medium 0;
+		padding: $spacing-abs-small;
+		overflow-x: auto;
+		line-height: 1.3;
+		background: $color-background-code-block !important; // stylelint-disable-line declaration-no-important
+		border-radius: $border-radius;
+	}
+}
+
+.code-file-name + .highlight pre {
+	border-radius: 0 0 $border-radius $border-radius;
 }

@@ -9,6 +9,7 @@ author:
 
 # Syntax highlighting
 pygmentsStyle: friendly
+pygmentsCodeFences: true
 
 params:
   social:

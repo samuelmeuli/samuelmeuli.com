@@ -16,7 +16,7 @@
 
 .post-content {
 	p + p {
-		margin-top: $spacing-abs-medium / 2;
+		margin-top: $spacing-abs-small;
 	}
 
 	ol,
@@ -26,6 +26,10 @@
 
 	ul {
 		list-style-type: disc;
+	}
+
+	li + li {
+		margin-top: $spacing-abs-small;
 	}
 }
 
