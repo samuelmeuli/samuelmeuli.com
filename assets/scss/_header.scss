@@ -4,7 +4,7 @@ header {
 
 body:not(.home) header {
 	margin-bottom: $spacing-rel-medium;
-	padding: $spacing-rel-small;
+	padding: 0 $spacing-rel-small;
 }
 
 body:not(.home) h1 {

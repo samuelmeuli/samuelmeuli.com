@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	padding: $spacing-rel-large $spacing-rel-small $spacing-rel-medium $spacing-rel-small;
+	padding: $spacing-rel-large 0 $spacing-rel-medium;
 	background: $color-background;
 
 	&.home {
