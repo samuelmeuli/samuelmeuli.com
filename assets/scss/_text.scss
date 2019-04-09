@@ -9,7 +9,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
 	color: $color-heading;
 	font-weight: $font-weight-semibold;
 }
@@ -32,6 +33,13 @@ h3 {
 	margin-bottom: $spacing-abs-very-small;
 	font-size: $font-size-h3;
 	letter-spacing: 0.03em;
+}
+
+h4 {
+	margin-top: $spacing-abs-small;
+	margin-bottom: $spacing-abs-very-small;
+	font-size: $font-size-h4;
+	letter-spacing: 0.02em;
 }
 
 strong {
