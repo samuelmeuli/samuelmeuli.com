@@ -1,7 +1,7 @@
 ---
 title: Packaging and Publishing an Electron App
 date: 2019-04-07
-categories: [Development, JavaScript, Electron]
+categories: [Guide, JavaScript, Electron]
 ---
 
 Electron simplifies the development of cross-platform desktop apps. Unfortunately, packaging and releasing an Electron app for the different platforms is not a straightforward task. This post aims to guide you through the process.
@@ -61,9 +61,9 @@ See [here](https://developer.apple.com/library/archive/documentation/General/Ref
 
 Finally, create a folder named `build` in your project's root directory and copy your app icon (named `icon.png`) into it. If you don't add this file, the default Electron icon will be used.
 
-You can now run `yarn build` and your app should get packaged for the platforms you've specified earlier. You can find the output in the `dist` directory (which you should add to your `.gitignore`).
+You can now run `yarn build` and your app should get packaged for the platforms you specified earlier. You can find the output in the `dist` directory (which you should add to your `.gitignore`).
 
-It's important to know that, by default, `electron-builder` will include all dependencies from your `package.json` file in the app package, whereas development dependencies are ignored. To keep your app size small, it's important that you specify dependencies as `devDependencies` if your app doesn't use them in production. If you're using a module bundler like Webpack, you should either mark the bundled dependencies as `devDependencies` (to avoid having them in your package twice) or configure `electron-builder` to skip these dependencies (using the `"files"` configuration key).
+It's important to know that, by default, `electron-builder` will include all dependencies from your `package.json` file in the app package, whereas development dependencies are ignored. To keep your app size small, you need to specify dependencies as `devDependencies` if your app doesn't use them in production. If you're using a module bundler like Webpack, you should either mark the bundled dependencies as `devDependencies` (to avoid having them in your package twice) or configure `electron-builder` to skip these dependencies (using the `"files"` configuration key).
 
 ### Auto Update
 
@@ -109,4 +109,4 @@ Whenever you want to publish a new version of your app, do the following:
 2. Run the `release` script with your GitHub token: `GH_TOKEN=... yarn release`. Your app will be built and the packages will be uploaded to GitHub. A release draft for the new version will be created.
 3. Open the GitHub page of your repository and find the new release draft with the download links for your app. Add a changelog and publish the release.
 
-That's it! Your Electron app is now ready to be downloaded from its GitHub page.
+That's it! Your Electron app is now ready to be downloaded from its GitHub page. If you additionally want to publish your on the Mac App Store, see [this follow-up post]({{< ref "2019-04-09-publishing-an-electron-app-on-the-mac-app-store.md" >}}).
