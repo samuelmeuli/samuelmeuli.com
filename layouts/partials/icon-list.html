@@ -1,12 +1,13 @@
 {{ range . }}
 	<li>
-			<a
-				{{ if .email }}
-					onclick="sendEmail({{ .email.username }}, {{ .email.domain }})"
-				{{ else }}
-					href="{{ .url }}"
-				{{ end }}
-			>
+		<a
+			class="image-link"
+			{{ if .email }}
+				onclick="sendEmail({{ .email.username }}, {{ .email.domain }})"
+			{{ else }}
+				href="{{ .url }}"
+			{{ end }}
+		>
 			<svg
 				viewBox="0 0 24 24"
 				width="30"

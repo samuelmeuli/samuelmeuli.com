@@ -1,15 +1,24 @@
 <li class="project-preview">
-	<!-- Icon -->
-	<img
-		src="/projects/{{ .Params.name }}/icon.svg"
-		alt="{{ .Title }} icon"
-		width="80"
-		class="project-icon"
-	/>
+	{{ $websiteUrl := (index .Params.links 0).url }}
 
-	<div>
+	<!-- Icon -->
+	<a href="{{ $websiteUrl }}" class="image-link">
+		<img
+			src="/projects/{{ .Params.name }}/icon.svg"
+			alt="{{ .Title }} icon"
+			width="80"
+			height="80"
+			class="project-icon"
+		/>
+	</a>
+
+	<div class="project-info">
 		<!-- Project name -->
-		<h3>{{ .Title }}</h3>
+		<h3>
+			<a href="{{ $websiteUrl }}">
+				{{ .Title }}
+			</a>
+		</h3>
 
 		<div class="post-info">
 			<!-- Date (month and year) -->
