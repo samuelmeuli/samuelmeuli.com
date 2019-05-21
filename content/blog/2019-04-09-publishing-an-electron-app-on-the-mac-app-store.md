@@ -23,7 +23,7 @@ To generate a package for the Mac App Store every time you run your `build` scri
   "build": {
     "mac": {
       "target": ["dmg", "mas", "zip"],
-      "electronLanguages": ["en", "en_AU", "en_CA", "en_GB", "en_NZ", "en_US", "en_ZA"]
+      "electronLanguages": ["en"]
     }
   }
 }
