@@ -10,7 +10,7 @@
 		"start": "hugo server --buildDrafts --buildFuture --port 3000",
 		"build": "hugo --buildFuture --minify",
 		"format": "prettier --write",
-		"lint": "stylelint --fix --syntax scss src/**/*.scss"
+		"lint": "stylelint --fix --max-warnings 0 --syntax scss"
 	},
 	"devDependencies": {
 		"@samuelmeuli/stylelint-config": "~1.0.0",
