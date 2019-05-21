@@ -19,6 +19,13 @@
 		"prettier": "1.16.4",
 		"stylelint": "^9.10.1"
 	},
+	"stylelint": {
+		"extends": "@samuelmeuli/stylelint-config"
+	},
+	"prettier": {
+		"printWidth": 100,
+		"trailingComma": "all"
+	},
 	"husky": {
 		"hooks": {
 			"pre-commit": "lint-staged"
