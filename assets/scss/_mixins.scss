@@ -11,3 +11,23 @@
 		@content;
 	}
 }
+
+// Selectors
+
+@mixin sans-serif {
+	h1,
+	h2,
+	h3,
+	h4,
+	header,
+	.post-info {
+		@content;
+	}
+}
+
+@mixin monospace {
+	pre,
+	code {
+		@content;
+	}
+}

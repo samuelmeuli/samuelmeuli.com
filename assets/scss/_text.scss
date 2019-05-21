@@ -7,6 +7,44 @@ body {
 	hyphens: auto;
 }
 
+// Text in serif font (applied to everything that is not sans-serif or monospace)
+body {
+	font-family: "Crimson Pro", serif;
+
+	// Links: colored underline
+	a {
+		padding-bottom: 0.5px; // Show underlines under inline code
+		color: inherit;
+		text-decoration: none;
+		border-bottom: 0.1em solid $color-main-hover;
+		transition: color $transition;
+
+		&:hover {
+			color: $color-main-hover;
+		}
+	}
+}
+
+// Text in sans-serif font (headings and info text)
+@include sans-serif {
+	font-family: "Inter", $font-family-system;
+
+	@supports (font-variation-settings: normal) {
+		font-family: "Inter var", sans-serif;
+	}
+
+	// Links: Colored, no underline
+	a {
+		color: $color-main;
+		border: 0;
+	}
+}
+
+// Text in monospace font (code)
+@include monospace {
+	font-family: "IBM Plex Mono", monospace;
+}
+
 h1,
 h2,
 h3,
