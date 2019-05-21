@@ -12,6 +12,7 @@ pygmentsStyle: friendly
 pygmentsCodeFences: true
 
 params:
+  github: https://github.com/samuelmeuli/samuelmeuli.com
   social:
     - name: github
       title: GitHub
