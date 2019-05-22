@@ -3,16 +3,16 @@ header {
 }
 
 body:not(.home) header {
-	margin-bottom: $spacing-rel-medium;
-	padding: 0 $spacing-rel-small;
+	margin-bottom: var(--spacing-rel-medium);
+	padding: 0 var(--spacing-rel-small);
 }
 
 body:not(.home) h1 {
-	margin-bottom: $spacing-abs-medium;
+	margin-bottom: var(--spacing-abs-medium);
 }
 
 .home h1 {
-	margin: $spacing-rel-medium 0;
+	margin: var(--spacing-rel-medium) 0;
 }
 
 .nav-item {
@@ -20,9 +20,9 @@ body:not(.home) h1 {
 }
 
 .nav-item + .nav-item {
-	margin-left: $spacing-abs-medium;
+	margin-left: var(--spacing-abs-medium);
 }
 
 .nav-item-active {
-	font-weight: $font-weight-semibold;
+	font-weight: var(--font-weight-semibold);
 }

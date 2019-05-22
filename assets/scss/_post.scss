@@ -1,7 +1,7 @@
 .post {
 	.post-info {
-		margin-bottom: $spacing-abs-large;
-		font-size: $font-size-small;
+		margin-bottom: var(--spacing-abs-large);
+		font-size: var(--font-size-small);
 		text-align: center;
 	}
 
@@ -11,21 +11,21 @@
 }
 
 .post-title {
-	margin-bottom: $spacing-abs-small;
+	margin-bottom: var(--spacing-abs-small);
 }
 
 .post-content {
 	h3 {
-		margin-bottom: $spacing-abs-small;
+		margin-bottom: var(--spacing-abs-small);
 	}
 
 	p + p {
-		margin-top: $spacing-abs-small;
+		margin-top: var(--spacing-abs-small);
 	}
 
 	ol,
 	ul {
-		margin: $spacing-abs-medium 0 $spacing-abs-medium $spacing-abs-large;
+		margin: var(--spacing-abs-medium) 0 var(--spacing-abs-medium) var(--spacing-abs-large);
 	}
 
 	ul {
@@ -33,7 +33,7 @@
 	}
 
 	li + li {
-		margin-top: $spacing-abs-small;
+		margin-top: var(--spacing-abs-small);
 	}
 }
 

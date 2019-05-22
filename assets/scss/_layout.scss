@@ -3,15 +3,15 @@ html {
 }
 
 body {
-	padding: $spacing-rel-large 0 $spacing-rel-medium;
-	background: $color-background;
+	padding: var(--spacing-rel-large) 0 var(--spacing-rel-medium);
+	background: var(--color-background);
 
 	&.home {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		height: 100%;
-		padding: 0 $spacing-rel-small;
+		padding: 0 var(--spacing-rel-small);
 	}
 }
 
@@ -19,16 +19,16 @@ main {
 	width: 800px;
 	max-width: 100%;
 	margin: 0 auto;
-	padding: $spacing-rel-medium;
-	background: $color-background-light;
-	border-radius: $border-radius;
-	box-shadow: $box-shadow;
+	padding: var(--spacing-rel-medium);
+	background: var(--color-background-light);
+	border-radius: var(--border-radius);
+	box-shadow: var(--box-shadow);
 }
 
 hr {
 	width: 300px;
 	max-width: 100%;
-	margin: 2 * $spacing-abs-large auto $spacing-abs-large;
+	margin: calc(2 * var(--spacing-abs-large)) auto var(--spacing-abs-large);
 	border: 0;
-	border-top: 1.5px solid $color-text;
+	border-top: 1.5px solid var(--color-text);
 }

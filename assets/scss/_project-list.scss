@@ -1,5 +1,5 @@
 .project-preview {
-	margin-top: $spacing-abs-large;
+	margin-top: var(--spacing-abs-large);
 
 	@include small-screen {
 		text-align: center;
@@ -10,7 +10,7 @@
 		align-items: center;
 
 		.project-icon {
-			margin-right: $spacing-abs-large;
+			margin-right: var(--spacing-abs-large);
 		}
 
 		.project-info {

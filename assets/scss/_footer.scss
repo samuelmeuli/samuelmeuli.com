@@ -1,5 +1,5 @@
 body:not(.home) footer {
-	margin-top: $spacing-rel-medium;
+	margin-top: var(--spacing-rel-medium);
 }
 
 .footer-links {

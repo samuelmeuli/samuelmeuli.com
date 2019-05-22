@@ -1,6 +1,6 @@
 .post-info {
-	margin-bottom: $spacing-abs-very-small;
-	font-size: $font-size-small;
+	margin-bottom: var(--spacing-abs-very-small);
+	font-size: var(--font-size-small);
 
 	@include large-screen {
 		> * {

@@ -1,8 +1,11 @@
+@import "/css/code-light.css";
+@import url("/css/code-dark.css") (prefers-color-scheme: dark);
+
 code {
 	padding: 0.5px 5px;
 	font-size: 80%;
-	background: $color-background-code-inline;
-	border-radius: $border-radius;
+	background: var(--color-background-code-inline);
+	border-radius: var(--border-radius);
 }
 
 // Code blocks
@@ -16,25 +19,25 @@ code {
 }
 
 .code-file-name {
-	margin-top: $spacing-abs-medium;
-	margin-bottom: -$spacing-abs-medium;
-	padding: 0 $spacing-abs-small;
-	font-weight: $font-weight-bold;
-	background: $color-background-code-file-name;
-	border-radius: $border-radius $border-radius 0 0;
+	margin-top: var(--spacing-abs-medium);
+	margin-bottom: calc(var(--spacing-abs-medium) * -1);
+	padding: 0 var(--spacing-abs-small);
+	font-weight: var(--font-weight-bold);
+	background: var(--color-background-code-file-name);
+	border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 .highlight {
 	pre {
-		margin: $spacing-abs-medium 0;
-		padding: $spacing-abs-small;
+		margin: var(--spacing-abs-medium) 0;
+		padding: var(--spacing-abs-small);
 		overflow-x: auto;
 		line-height: 1.3;
-		background: $color-background-code-block !important; // stylelint-disable-line declaration-no-important
-		border-radius: $border-radius;
+		background: var(--color-background-code-block);
+		border-radius: var(--border-radius);
 	}
 }
 
 .code-file-name + .highlight pre {
-	border-radius: 0 0 $border-radius $border-radius;
+	border-radius: 0 0 var(--border-radius) var(--border-radius);
 }

@@ -8,8 +8,8 @@ author:
   homepage: "https://samuelmeuli.com"
 
 # Syntax highlighting
-pygmentsStyle: friendly
 pygmentsCodeFences: true
+pygmentsUseClasses: true
 
 params:
   github: https://github.com/samuelmeuli/samuelmeuli.com

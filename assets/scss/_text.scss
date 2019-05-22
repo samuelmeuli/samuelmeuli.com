@@ -1,8 +1,8 @@
 body {
-	color: $color-text;
-	font-weight: $font-weight-normal;
-	font-size: $font-size;
-	line-height: $line-height;
+	color: var(--color-text);
+	font-weight: var(--font-weight-normal);
+	font-size: var(--font-size);
+	line-height: var(--line-height);
 	letter-spacing: 0.01em;
 	hyphens: auto;
 }
@@ -16,18 +16,18 @@ body {
 		padding-bottom: 0.5px; // Show underlines under inline code
 		color: inherit;
 		text-decoration: none;
-		border-bottom: 0.1em solid $color-main-hover;
-		transition: color $transition;
+		border-bottom: 0.1em solid var(--color-main-hover);
+		transition: color var(--transition);
 
 		&:hover {
-			color: $color-main-hover;
+			color: var(--color-main-hover);
 		}
 	}
 }
 
 // Text in sans-serif font (headings and info text)
 @include sans-serif {
-	font-family: "Inter", $font-family-system;
+	font-family: "Inter", var(--font-family-system);
 
 	@supports (font-variation-settings: normal) {
 		font-family: "Inter var", sans-serif;
@@ -35,7 +35,7 @@ body {
 
 	// Links: Colored, no underline
 	a {
-		color: $color-main;
+		color: var(--color-main);
 		border: 0;
 	}
 }
@@ -49,39 +49,39 @@ h1,
 h2,
 h3,
 h4 {
-	color: $color-heading;
-	font-weight: $font-weight-semibold;
+	color: var(--color-heading);
+	font-weight: var(--font-weight-semibold);
 }
 
 h1 {
-	font-size: $font-size-h1;
+	font-size: var(--font-size-h1);
 	line-height: 1.25;
 	letter-spacing: 0.05em;
 }
 
 h2 {
-	margin-bottom: $spacing-abs-medium;
-	font-size: $font-size-h2;
+	margin-bottom: var(--spacing-abs-medium);
+	font-size: var(--font-size-h2);
 	letter-spacing: 0.04em;
 	text-align: center;
 }
 
 h3 {
-	margin-top: $spacing-abs-medium;
-	margin-bottom: $spacing-abs-very-small;
-	font-size: $font-size-h3;
+	margin-top: var(--spacing-abs-medium);
+	margin-bottom: var(--spacing-abs-very-small);
+	font-size: var(--font-size-h3);
 	letter-spacing: 0.03em;
 }
 
 h4 {
-	margin-top: $spacing-abs-small;
-	margin-bottom: $spacing-abs-very-small;
-	font-size: $font-size-h4;
+	margin-top: var(--spacing-abs-small);
+	margin-bottom: var(--spacing-abs-very-small);
+	font-size: var(--font-size-h4);
 	letter-spacing: 0.02em;
 }
 
 strong {
-	font-weight: $font-weight-bold;
+	font-weight: var(--font-weight-bold);
 }
 
 .image-link {

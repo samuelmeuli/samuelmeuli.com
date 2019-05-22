@@ -1,13 +1,13 @@
 // Screen sizes
 
 @mixin small-screen {
-	@media (max-width: $break-point) {
+	@media (max-width: 600px) {
 		@content;
 	}
 }
 
 @mixin large-screen {
-	@media (min-width: $break-point + 1px) {
+	@media (min-width: 601px) {
 		@content;
 	}
 }
