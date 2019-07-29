@@ -41,9 +41,9 @@ You can also specify configuration parameters for `electron-builder` in your `pa
 ```json
 {
   "name": "your-app",
-  "productName": "Your App",
   "build": {
     "appId": "com.yourcompany.yourapp",
+    "productName": "Your App",
     "mac": {
       "category": "public.app-category.lifestyle"
     },
