@@ -23,9 +23,6 @@ params:
     - name: product-hunt
       title: Product Hunt
       url: "https://producthunt.com/@samuelmeuli"
-    - name: keybase
-      title: Keybase
-      url: "https://keybase.io/samuelmeuli"
     - name: rss
       title: RSS
       url: /index.xml
