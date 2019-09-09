@@ -1,7 +1,11 @@
 {
 	"name": "samuelmeuli.com",
 	"description": "My personal website",
-	"author": "Samuel Meuli <me@samuelmeuli.com>",
+	"author": {
+		"name": "Samuel Meuli",
+		"email": "me@samuelmeuli.com",
+		"url": "https://samuelmeuli.com"
+	},
 	"repository": "github:samuelmeuli/samuelmeuli.com",
 	"homepage": "https://samuelmeuli.com",
 	"license": "MIT",
@@ -12,12 +16,13 @@
 		"format": "prettier --write",
 		"lint": "stylelint --fix --max-warnings 0 --syntax scss"
 	},
+	"dependencies": {},
 	"devDependencies": {
-		"@samuelmeuli/stylelint-config": "~1.0.2",
-		"husky": "^2.3.0",
-		"lint-staged": "^8.1.7",
-		"prettier": "1.17.1",
-		"stylelint": "^10.0.1"
+		"@samuelmeuli/stylelint-config": "^1.0.2",
+		"husky": "^3.0.5",
+		"lint-staged": "^9.2.5",
+		"prettier": "1.18.2",
+		"stylelint": "^10.1.0"
 	},
 	"stylelint": {
 		"extends": "@samuelmeuli/stylelint-config"
@@ -25,11 +30,6 @@
 	"prettier": {
 		"printWidth": 100,
 		"trailingComma": "all"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
 	},
 	"lint-staged": {
 		"*.scss": [
@@ -41,5 +41,10 @@
 			"yarn format",
 			"git add"
 		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
 	}
 }
