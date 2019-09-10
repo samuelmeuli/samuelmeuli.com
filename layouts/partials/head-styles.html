@@ -1,3 +1,12 @@
+<!-- CSS -->
 {{ $scss := resources.Get "scss/main.scss" }}
 {{ $styles := $scss | resources.ToCSS | resources.Minify }}
 <style>{{ $styles.Content | safeCSS }}</style>
+
+<!-- Fonts -->
+<link
+	href="https://fonts.googleapis.com/css?family=Crimson+Pro:400,400i,600,600i|IBM+Plex+Mono:400,400i,600,600i&display=swap"
+	rel="stylesheet"
+>
+<!-- TODO: Import Inter from Google Fonts and only the required weights (https://github.com/google/fonts/issues/1455) -->
+<link href="https://rsms.me/inter/inter.css" rel="stylesheet">
