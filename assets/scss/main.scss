@@ -1,19 +1,23 @@
 // Style reset
-@import "minireset";
+@import "./general/minireset";
 
-// Layout
-@import "variables";
-@import "mixins";
-@import "layout";
-@import "fonts";
-@import "text";
-@import "icons";
+// General
+@import "./general/variables";
+@import "./general/mixins";
+@import "./general/fonts";
+@import "./general/layout";
+@import "./general/icons";
+@import "./general/text";
 
 // Elements
-@import "header";
-@import "footer";
-@import "project-list";
-@import "post-list";
-@import "post";
-@import "404";
-@import "code";
+@import "./elements/header";
+@import "./elements/footer";
+@import "./elements/social-links";
+@import "./elements/post-info";
+@import "./elements/project";
+@import "./elements/code";
+
+// Pages
+@import "./pages/404";
+@import "./pages/post-list";
+@import "./pages/post";

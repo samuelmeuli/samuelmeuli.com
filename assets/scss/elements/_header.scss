@@ -1,0 +1,34 @@
+header {
+	text-align: center;
+}
+
+.nav-item {
+	display: inline-block;
+}
+
+.nav-item + .nav-item {
+	margin-left: var(--spacing-abs-medium);
+}
+
+.nav-item-active {
+	font-weight: var(--font-weight-semibold);
+}
+
+// Header on home page
+
+body:not(.home) header {
+	margin-bottom: var(--spacing-rel-medium);
+	padding: 0 var(--spacing-rel-small);
+
+	h1 {
+		margin-bottom: var(--spacing-abs-medium);
+	}
+}
+
+// Header on other pages
+
+.home header {
+	h1 {
+		margin: var(--spacing-rel-medium) 0;
+	}
+}

@@ -1,0 +1,34 @@
+.project {
+	@include small-screen {
+		text-align: center;
+	}
+
+	@include large-screen {
+		display: flex;
+		align-items: center;
+
+		.project-icon {
+			margin-right: var(--spacing-abs-large);
+		}
+
+		.project-info {
+			flex: 1;
+		}
+	}
+
+	// Remove heading spacing (cannot collapse into higher-level heading spacing)
+	h4 {
+		margin-top: 0;
+		margin-bottom: var(--spacing-abs-very-small);
+	}
+
+	// Remove list spacing
+	.post-categories {
+		margin: 0;
+	}
+}
+
+// Add removed heading spacing between adjacent projects
+.project + .project {
+	margin-top: var(--spacing-abs-medium);
+}

@@ -1,0 +1,13 @@
+.icon {
+	transition: var(--transition);
+	fill: var(--color-text);
+
+	&:hover {
+		fill: var(--color-main-hover);
+	}
+}
+
+.icon-link {
+	line-height: 0;
+	border: 0;
+}

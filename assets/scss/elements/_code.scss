@@ -2,6 +2,8 @@
 @import url("/css/code-dark.css") (prefers-color-scheme: dark);
 
 code {
+
+	// Inline code
 	padding: 0.5px 5px;
 	font-size: 80%;
 	background: var(--color-background-code-inline);
@@ -12,6 +14,7 @@ code {
 
 .code-file-name,
 .highlight {
+	// Undo styles for inline code
 	code {
 		padding: 0;
 		background: none;

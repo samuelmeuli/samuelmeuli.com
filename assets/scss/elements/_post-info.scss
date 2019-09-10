@@ -12,13 +12,13 @@
 .post-categories {
 	@include small-screen {
 		+ li::before {
-			content: " · ";
+			content: " • ";
 		}
 	}
 
 	@include large-screen {
 		&::before {
-			content: " · ";
+			content: " • ";
 		}
 	}
 

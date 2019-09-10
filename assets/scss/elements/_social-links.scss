@@ -1,4 +1,4 @@
-.icon-list {
+.social-links {
 	line-height: 1;
 
 	a {
@@ -11,14 +11,5 @@
 
 	li + li {
 		margin-left: 20px;
-	}
-}
-
-.icon {
-	transition: var(--transition);
-	fill: var(--color-text);
-
-	&:hover {
-		fill: var(--color-main-hover);
 	}
 }

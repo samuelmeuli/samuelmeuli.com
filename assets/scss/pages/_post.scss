@@ -1,0 +1,20 @@
+.post-title {
+	margin-bottom: var(--spacing-abs-small);
+}
+
+.post-head .post-info {
+	margin-bottom: var(--spacing-abs-large);
+	text-align: center;
+}
+
+.post-actions {
+	text-align: center;
+
+	li {
+		display: inline-block;
+	}
+
+	li + li::before {
+		content: " • ";
+	}
+}

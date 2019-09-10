@@ -1,0 +1,43 @@
+<div class="project">
+	{{ $id := .Get "id" }}
+	{{ $name := .Get "name" }}
+	{{ $date := .Get "date" | time }}
+	{{ $description := .Get "description" }}
+	{{ $website := .Get "website" }}
+
+	<!-- Icon -->
+	<a href="{{ $website }}" class="icon-link">
+		<img
+			src="/icons/projects/{{ $id }}.svg"
+			alt="{{ $name }} icon"
+			width="80"
+			height="80"
+			class="project-icon"
+		/>
+	</a>
+
+	<div class="project-info">
+		<!-- Project name -->
+		<h4>
+			<a href="{{ $website }}">
+				{{ $name }}
+			</a>
+		</h4>
+
+		<div class="post-info">
+			<!-- Date (month and year) -->
+			<p>{{ $date.Format "January 2006" }}</p>
+
+			<!-- Links -->
+			<ul class="post-categories">
+				<li>
+					<a href="{{ .Params.Github }}">GitHub</a>,
+					<a href="{{ .Params.Producthunt }}">Product Hunt</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Description -->
+		<p>{{ $description }}</p>
+	</div>
+</div>

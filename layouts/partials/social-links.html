@@ -1,7 +1,7 @@
 {{ range . }}
 	<li>
 		<a
-			class="image-link"
+			class="icon-link"
 			{{ if .email }}
 				onclick="sendEmail({{ .email.username }}, {{ .email.domain }})"
 			{{ else }}
@@ -15,8 +15,8 @@
 				title="{{ .title }}"
 			>
 				<use
-					xlink:href="/icons/{{ .name }}.svg#icon" {{/* SVG v1.1 (still required by Safari) */}}
-					href="/icons/{{ .name }}.svg#icon" {{/* SVG v2 */}}
+					xlink:href="/icons/social/{{ .name }}.svg#icon" {{/* SVG v1.1 (still required by Safari) */}}
+					href="/icons/social/{{ .name }}.svg#icon" {{/* SVG v2 */}}
 				/>
 			</svg>
 		</a>
