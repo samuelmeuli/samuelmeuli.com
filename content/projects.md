@@ -36,7 +36,7 @@ The following is a selection of projects I've worked on. Most of my projects' co
 
 #### Scripts
 
-- [time-machine-ignore](https://github.com/samuelmeuli/time-machine-ignore) – Exclude development files from Time Machine backups
+- [tmignore](https://github.com/samuelmeuli/tmignore) – Exclude development files from Time Machine backups
 
 #### Themes
 
