@@ -1,7 +1,7 @@
 ---
 title: Publishing an Electron App on the Mac App Store
 date: 2019-04-09
-categories: [Guide, JavaScript, Electron, macOS]
+categories: [Tutorials, JavaScript, Electron, macOS]
 ---
 
 Having your Electron app on the Mac App Store makes it simpler for users to discover and download your app. This guide explains how to get your app listed.

@@ -1,7 +1,7 @@
 ---
 title: Packaging and Publishing an Electron App
 date: 2019-04-07
-categories: [Guide, JavaScript, Electron]
+categories: [Tutorials, JavaScript, Electron]
 ---
 
 Electron simplifies the development of cross-platform desktop apps. Unfortunately, packaging and releasing an Electron app for the different platforms is not a straightforward task. This post aims to guide you through the process.
