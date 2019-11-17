@@ -20,7 +20,8 @@
 	h3,
 	h4,
 	header,
-	.post-info {
+	.post-info,
+	.post-content > p:first-child {
 		@content;
 	}
 }

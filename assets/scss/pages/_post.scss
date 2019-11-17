@@ -7,6 +7,12 @@
 	text-align: center;
 }
 
+// Summary (first paragraph)
+.post-content > p:first-child {
+	margin-bottom: var(--spacing-abs-large);
+	text-align: center;
+}
+
 .post-actions {
 	text-align: center;
 
