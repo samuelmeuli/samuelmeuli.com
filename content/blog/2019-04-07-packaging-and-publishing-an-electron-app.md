@@ -102,6 +102,8 @@ For auto updating to work on macOS, your code needs to be signed:
 
 ### Release
 
+#### Manual Release
+
 `electron-builder` supports various platforms for storing your app. By default, GitHub Releases will be used to store the files. To be able to publish on GitHub, [generate a Personal Access Token](https://github.com/settings/tokens) for `electron-builder`.
 
 Whenever you want to publish a new version of your app, do the following:
@@ -111,3 +113,7 @@ Whenever you want to publish a new version of your app, do the following:
 3. Open the GitHub page of your repository and find the new release draft with the download links for your app. Add a changelog and publish the release.
 
 That's it! Your Electron app is now ready to be downloaded from its GitHub page.
+
+#### Using GitHub Actions
+
+Instead of building and releasing the app manually, you can also use GitHub Actions to do this task for you. You can read more about this process in [my other blog post]({{< ref "2019-11-17-automating-the-release-of-electron-apps.md" >}}).
