@@ -51,6 +51,7 @@ You can also specify configuration parameters for `electron-builder` in your `pa
       "icon": false
     },
     "linux": {
+      "target": ["AppImage"],
       "category": "Office"
     }
   }
