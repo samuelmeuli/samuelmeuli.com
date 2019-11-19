@@ -38,6 +38,11 @@ The following is a selection of projects I've worked on. Most of my projects' co
 
 - [tmignore](https://github.com/samuelmeuli/tmignore) – Exclude development files from Time Machine backups
 
+#### GitHub Actions
+
+- [Electron Builder Action](https://github.com/samuelmeuli/action-electron-builder) – GitHub Action for building and releasing Electron apps
+- [Maven Publish Action](https://github.com/samuelmeuli/action-maven-publish) – GitHub Action for publishing to the Maven Central Repository
+
 #### Themes
 
 - [Alfred System Theme](https://github.com/samuelmeuli/alfred-system-theme) – Alfred themes in style of Apple's macOS apps
