@@ -8,9 +8,9 @@ The following is a selection of projects I've worked on. Most of my projects' co
 
 ### Featured Projects
 
-{{<project id="mini-diary" name="Mini Diary" date="2019-01-18" description="Simple and secure journal app for macOS, Windows and Linux" website="https://minidiary.app" github="https://github.com/samuelmeuli/mini-diary" producthunt="https://www.producthunt.com/posts/mini-diary">}}
+{{<project name="Mini Diary" date="2019-01-18" description="Simple and secure journal app for macOS, Windows and Linux" iconPath="/icons/projects/mini-diary.png" website="https://minidiary.app" github="https://github.com/samuelmeuli/mini-diary" producthunt="https://www.producthunt.com/posts/mini-diary">}}
 
-{{<project id="lyrics-poster" name="LyricsPoster" date="2018-07-13" description="Web app for creating artist posters written in their lyrics" website="https://lyricsposter.net" github="https://github.com/samuelmeuli/lyrics-poster" producthunt="https://www.producthunt.com/posts/lyricsposter">}}
+{{<project name="LyricsPoster" date="2018-07-13" description="Web app for creating artist posters written in their lyrics" iconPath="/icons/projects/lyrics-poster.svg" website="https://lyricsposter.net" github="https://github.com/samuelmeuli/lyrics-poster" producthunt="https://www.producthunt.com/posts/lyricsposter">}}
 
 ### Other Projects
 

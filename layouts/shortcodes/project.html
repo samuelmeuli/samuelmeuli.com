@@ -1,14 +1,14 @@
 <div class="project">
-	{{ $id := .Get "id" }}
 	{{ $name := .Get "name" }}
 	{{ $date := .Get "date" | time }}
 	{{ $description := .Get "description" }}
 	{{ $website := .Get "website" }}
+	{{ $iconPath := .Get "iconPath" }}
 
 	<!-- Icon -->
 	<a href="{{ $website }}" class="icon-link">
 		<img
-			src="/icons/projects/{{ $id }}.svg"
+			src="{{ $iconPath }}"
 			alt="{{ $name }} icon"
 			width="80"
 			height="80"
