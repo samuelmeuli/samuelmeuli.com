@@ -14,7 +14,7 @@ For programmers, this behavior is often undesirable. For example, the tilde (`~`
 
 Fortunately, reconfiguring your keyboard layout to remove these dead keys is relatively easy. The [Ukelele](https://software.sil.org/ukelele) app can help you with this task:
 
-1. Download and install Ukelele from [its website](https://software.sil.org/ukelele/#downloads) or using `brew cask install ukelele`. (Version 3.3 didn't work for me on macOS Catalina; I had to download the beta of version 3.4 from the website.)
+1. Download and install Ukelele from [its website](https://software.sil.org/ukelele/#downloads) or using `brew cask install ukelele`.
 2. Open the Ukelele app.
 3. In the application menu, select `File` → `New From Current Input Source`. This will detect your keyboard layout and create a copy which you can modify.
 4. In the main window, Ukelele displays your layout with the dead keys highlighted in red. Right-click each of your dead keys, select the corresponding modifier key if necessary (e.g. the shift or option key) and enter the key's value at the bottom of the dialog. This will change the key's behavior to insert the symbol right away.
