@@ -40,6 +40,7 @@ The following is a selection of projects I've worked on. Most of my projects' co
 
 #### GitHub Actions
 
+- [Lint Action](https://github.com/samuelmeuli/lint-action) – GitHub Action for detecting and fixing linting errors
 - [Electron Builder Action](https://github.com/samuelmeuli/action-electron-builder) – GitHub Action for building and releasing Electron apps
 - [Maven Publish Action](https://github.com/samuelmeuli/action-maven-publish) – GitHub Action for publishing to the Maven Central Repository
 
