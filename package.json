@@ -14,30 +14,28 @@
 		"start": "hugo server --buildDrafts --buildFuture --port 3000",
 		"build": "hugo --buildFuture --minify",
 		"format": "prettier --write",
-		"lint": "stylelint --fix --max-warnings 0 --syntax scss"
+		"lint": "stylelint --fix --max-warnings 0"
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@samuelmeuli/stylelint-config": "^1.0.2",
-		"husky": "^3.0.5",
-		"lint-staged": "^9.2.5",
-		"prettier": "1.18.2",
-		"stylelint": "^10.1.0"
+		"@samuelmeuli/prettier-config": "^1.0.0",
+		"@samuelmeuli/stylelint-config": "^3.0.0",
+		"husky": "^3.1.0",
+		"lint-staged": "^9.5.0",
+		"prettier": "^1.19.1",
+		"stylelint": "^11.0.0"
 	},
 	"stylelint": {
 		"extends": "@samuelmeuli/stylelint-config"
 	},
-	"prettier": {
-		"printWidth": 100,
-		"trailingComma": "all"
-	},
+	"prettier": "@samuelmeuli/prettier-config",
 	"lint-staged": {
-		"*.scss": [
-			"yarn format",
+		"*.{css,sass,scss}": [
 			"yarn lint",
+			"yarn format",
 			"git add"
 		],
-		"*.{json,md,yml}": [
+		"*.{html,js,json,jsx,md,ts,tsx,vue,yaml,yml}": [
 			"yarn format",
 			"git add"
 		]
