@@ -44,6 +44,7 @@ body {
 // Text in monospace font (code)
 @include monospace {
 	font-family: "IBM Plex Mono", monospace;
+	tab-size: 2;
 }
 
 h1,

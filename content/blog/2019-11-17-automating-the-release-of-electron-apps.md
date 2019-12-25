@@ -4,7 +4,7 @@ date: 2019-11-17
 categories: [JavaScript, Electron, GitHub]
 ---
 
-Using GitHub Actions to automatically build and release your Electron app for macOS, Windows and Linux.
+Using GitHub Actions to automatically build and release your Electron app for macOS, Windows and Linux
 
 <!--more-->
 

@@ -4,7 +4,7 @@ date: 2019-04-07
 categories: [Tutorials, JavaScript, Electron]
 ---
 
-Electron simplifies the development of cross-platform desktop apps. Unfortunately, packaging and releasing an Electron app for the different platforms is not a straightforward task. This post aims to guide you through the process.
+Electron simplifies the development of cross-platform desktop apps. Unfortunately, packaging and releasing an Electron app for the different platforms is not a straightforward task. This post aims to guide you through the process
 
 <!--more-->
 
@@ -24,11 +24,11 @@ Next, add the following scripts to your `package.json` file:
 
 ```json
 {
-  "scripts:": {
-    "postinstall": "electron-builder install-app-deps",
-    "build": "electron-builder --mac --windows --linux",
-    "release": "electron-builder --mac --windows --linux --publish always"
-  }
+	"scripts:": {
+		"postinstall": "electron-builder install-app-deps",
+		"build": "electron-builder --mac --windows --linux",
+		"release": "electron-builder --mac --windows --linux --publish always"
+	}
 }
 ```
 
@@ -40,21 +40,21 @@ You can also specify configuration parameters for `electron-builder` in your `pa
 
 ```json
 {
-  "name": "your-app",
-  "build": {
-    "appId": "com.yourcompany.yourapp",
-    "productName": "Your App",
-    "mac": {
-      "category": "public.app-category.lifestyle"
-    },
-    "dmg": {
-      "icon": false
-    },
-    "linux": {
-      "target": ["AppImage"],
-      "category": "Office"
-    }
-  }
+	"name": "your-app",
+	"build": {
+		"appId": "com.yourcompany.yourapp",
+		"productName": "Your App",
+		"mac": {
+			"category": "public.app-category.lifestyle"
+		},
+		"dmg": {
+			"icon": false
+		},
+		"linux": {
+			"target": ["AppImage"],
+			"category": "Office"
+		}
+	}
 }
 ```
 
@@ -84,7 +84,7 @@ Add the following code to your main process:
 const autoUpdater = require("electron-updater");
 
 app.on("ready", () => {
-  autoUpdater.checkForUpdatesAndNotify();
+	autoUpdater.checkForUpdatesAndNotify();
 });
 ```
 

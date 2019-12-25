@@ -4,7 +4,7 @@ date: 2019-11-17
 categories: [Tutorials, macOS]
 ---
 
-A tutorial on re-mapping dead keys on macOS keyboard layouts.
+A tutorial on re-mapping dead keys on macOS keyboard layouts
 
 <!--more-->
 

@@ -4,7 +4,7 @@ date: 2019-04-09
 categories: [Tutorials, JavaScript, Electron, macOS]
 ---
 
-Having your Electron app on the Mac App Store makes it simpler for users to discover and download your app. This guide explains how to get your app listed.
+Having your Electron app on the Mac App Store makes it simpler for users to discover and download your app. This guide explains how to get your app listed
 
 <!--more-->
 
@@ -22,12 +22,12 @@ To generate a package for the Mac App Store every time you run your `build` scri
 
 ```json
 {
-  "build": {
-    "mac": {
-      "target": ["dmg", "mas", "zip"],
-      "electronLanguages": ["en"]
-    }
-  }
+	"build": {
+		"mac": {
+			"target": ["dmg", "mas", "zip"],
+			"electronLanguages": ["en"]
+		}
+	}
 }
 ```
 
@@ -50,9 +50,9 @@ To specify the privileges required by your app, create the following file in you
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>com.apple.security.app-sandbox</key>
-  <true/>
-  <!-- Add entitlements here -->
+	<key>com.apple.security.app-sandbox</key>
+	<true/>
+	<!-- Add entitlements here -->
 </dict>
 </plist>
 ```
@@ -66,10 +66,10 @@ Now, add all entitlements your app needs to this file (see [Apple's docs](https:
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>com.apple.security.app-sandbox</key>
-  <true/>
-  <key>com.apple.security.files.user-selected.read-only</key>
-  <true/>
+	<key>com.apple.security.app-sandbox</key>
+	<true/>
+	<key>com.apple.security.files.user-selected.read-only</key>
+	<true/>
 </dict>
 </plist>
 ```
@@ -90,11 +90,11 @@ To test the MAS build, place `dev.provisionprofile` in your project's root. Exte
 
 ```json
 {
-  "build": {
-    "mas": {
-      "type": "development"
-    }
-  }
+	"build": {
+		"mas": {
+			"type": "development"
+		}
+	}
 }
 ```
 
