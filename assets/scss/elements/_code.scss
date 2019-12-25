@@ -2,7 +2,6 @@
 @import url("/css/code-dark.css") (prefers-color-scheme: dark);
 
 code {
-
 	// Inline code
 	padding: 0.5px 5px;
 	font-size: 80%;
@@ -12,7 +11,7 @@ code {
 
 // Code blocks
 
-.code-file-name,
+.file-name,
 .highlight {
 	// Undo styles for inline code
 	code {
@@ -21,12 +20,12 @@ code {
 	}
 }
 
-.code-file-name {
+.file-name {
 	margin-top: var(--spacing-abs-medium);
 	margin-bottom: calc(var(--spacing-abs-medium) * -1);
 	padding: 0 var(--spacing-abs-small);
 	font-weight: var(--font-weight-bold);
-	background: var(--color-background-code-file-name);
+	background: var(--color-background-file-name);
 	border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
@@ -41,6 +40,6 @@ code {
 	}
 }
 
-.code-file-name + .highlight pre {
+.file-name + .highlight pre {
 	border-radius: 0 0 var(--border-radius) var(--border-radius);
 }

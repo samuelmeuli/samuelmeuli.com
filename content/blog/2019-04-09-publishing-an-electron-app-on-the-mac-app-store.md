@@ -12,13 +12,13 @@ _**Update (November 17, 2019):** Due to Electron's use of internal macOS APIs, [
 
 I went through this process when publishing [Mini Diary](https://minidiary.app). `electron-builder`'s docs aren't great and existing tutorials are overly complicated or outdated. This guide aims to provide simple and comprehensive instructions on how to publish an app on the Mac App Store.
 
-**Important:** This tutorial assumes that you have followed _all_ steps outlined in the [previous post on packaging and publishing Electron apps]({{< ref "2019-04-07-packaging-and-publishing-an-electron-app.md" >}}).
+**Important:** This tutorial assumes that you have followed _all_ steps outlined in the [previous post on packaging and publishing Electron apps]({{<ref "2019-04-07-packaging-and-publishing-an-electron-app.md">}}).
 
 ### 1. `electron-builder` Configuration
 
 To generate a package for the Mac App Store every time you run your `build` script, extend the `electron-builder` configuration in your `package.json` file by the following settings:
 
-<div class="code-file-name"><code>package.json</code></div>
+{{<file-name>}}package.json{{</file-name>}}
 
 ```json
 {
@@ -43,7 +43,7 @@ All apps distributed on the Mac App Store need to be [sandboxed](https://develop
 
 To specify the privileges required by your app, create the following file in your project's `build` folder:
 
-<div class="code-file-name"><code>build/entitlements.mas.plist</code></div>
+{{<file-name>}}build/entitlements.mas.plist{{</file-name>}}
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -59,7 +59,7 @@ To specify the privileges required by your app, create the following file in you
 
 Now, add all entitlements your app needs to this file (see [Apple's docs](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html) for possible entitlements). The simplest way to do so is using Xcode. For example, if your Electron app needs to be able to read specific files using an open dialog, your entitlements file should look like this:
 
-<div class="code-file-name"><code>build/entitlements.mas.plist</code></div>
+{{<file-name>}}build/entitlements.mas.plist{{</file-name>}}
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -86,7 +86,7 @@ Navigate to the ["Profile" section of the Apple Developer Portal](https://develo
 
 To test the MAS build, place `dev.provisionprofile` in your project's root. Extend your `electron-builder` config in `package.json` by the following:
 
-<div class="code-file-name"><code>package.json</code></div>
+{{<file-name>}}package.json{{</file-name>}}
 
 ```json
 {

@@ -20,7 +20,7 @@ yarn add --dev electron-builder
 
 Next, add the following scripts to your `package.json` file:
 
-<div class="code-file-name"><code>package.json</code></div>
+{{<file-name>}}package.json{{</file-name>}}
 
 ```json
 {
@@ -36,7 +36,7 @@ The `postinstall` script will execute after every `yarn install` and makes sure 
 
 You can also specify configuration parameters for `electron-builder` in your `package.json` file under the `"build"` key. I recommend the following options:
 
-<div class="code-file-name"><code>package.json</code></div>
+{{<file-name>}}package.json{{</file-name>}}
 
 ```json
 {
@@ -78,7 +78,7 @@ yarn add electron-updater
 
 Add the following code to your main process:
 
-<div class="code-file-name"><code>main.js</code></div>
+{{<file-name>}}main.js{{</file-name>}}
 
 ```js
 const autoUpdater = require("electron-updater");
@@ -116,4 +116,4 @@ That's it! Your Electron app is now ready to be downloaded from its GitHub page.
 
 #### Using GitHub Actions
 
-Instead of building and releasing the app manually, you can also use GitHub Actions to do this task for you. You can read more about this process in [my other blog post]({{< ref "2019-11-17-automating-the-release-of-electron-apps.md" >}}).
+Instead of building and releasing the app manually, you can also use GitHub Actions to do this task for you. You can read more about this process in [my other blog post]({{<ref "2019-11-17-automating-the-release-of-electron-apps.md">}}).
