@@ -12,15 +12,15 @@ body {
 
 	// Colors (dark)
 	@media (prefers-color-scheme: dark) {
-		--color-background: #2c2c2c;
-		--color-background-light: #403f3f;
-		--color-background-code-block: var(--color-background);
-		--color-background-code-inline: #272727;
-		--color-background-file-name: #1f1f1f;
+		--color-background: #232323;
+		--color-background-light: #353535;
+		--color-background-code-block: #1d1d1d;
+		--color-background-code-inline: var(--color-background-code-block);
+		--color-background-file-name: #0c0c0c;
 		--color-main: #70c8db;
 		--color-main-hover: #3c98ad;
 		--color-text: #e4e4e4;
-		--color-heading: #e2e2e2;
+		--color-heading: #ececec;
 	}
 
 	// Fonts
