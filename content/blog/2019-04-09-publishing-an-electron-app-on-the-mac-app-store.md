@@ -12,7 +12,7 @@ _**Update (November 17, 2019):** Due to Electron's use of internal macOS APIs, [
 
 I went through this process when publishing [Mini Diary](https://minidiary.app). `electron-builder`'s docs aren't great and existing tutorials are overly complicated or outdated. This guide aims to provide simple and comprehensive instructions on how to publish an app on the Mac App Store.
 
-**Important:** This tutorial assumes that you have followed _all_ steps outlined in the [previous post on packaging and publishing Electron apps]({{<ref "2019-04-07-packaging-and-publishing-an-electron-app.md">}}).
+**Important:** This tutorial assumes that you have followed _all_ steps outlined in the [previous post on packaging and publishing Electron apps]({{<ref "2019-04-07-packaging-and-publishing-an-electron-app">}}).
 
 ### 1. `electron-builder` Configuration
 

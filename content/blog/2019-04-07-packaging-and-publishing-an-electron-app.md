@@ -116,4 +116,4 @@ That's it! Your Electron app is now ready to be downloaded from its GitHub page.
 
 #### Using GitHub Actions
 
-Instead of building and releasing the app manually, you can also use GitHub Actions to do this task for you. You can read more about this process in [my other blog post]({{<ref "2019-11-17-automating-the-release-of-electron-apps.md">}}).
+Instead of building and releasing the app manually, you can also use GitHub Actions to do this task for you. You can read more about this process in [my other blog post]({{<ref "2019-11-17-automating-the-release-of-electron-apps">}}).
