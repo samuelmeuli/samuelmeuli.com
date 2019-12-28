@@ -8,9 +8,15 @@
 }
 
 // Summary (first paragraph)
-.post-content > p:first-child {
-	margin-bottom: var(--spacing-abs-large);
-	text-align: center;
+.post-content {
+	> p:first-child {
+		margin-bottom: var(--spacing-abs-large);
+		text-align: center;
+	}
+
+	img {
+		margin: var(--spacing-abs-small) 0;
+	}
 }
 
 .post-actions {
