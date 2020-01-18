@@ -1,7 +1,7 @@
 ---
 title: Automating the Release of Electron Apps
 date: 2019-11-17
-categories: [JavaScript, Electron, GitHub]
+categories: [JavaScript, Electron, GitHub, CI]
 ---
 
 Using GitHub Actions to automatically build and release your Electron app for macOS, Windows and Linux
