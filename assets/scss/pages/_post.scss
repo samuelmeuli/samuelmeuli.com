@@ -16,6 +16,7 @@
 
 	img {
 		margin: var(--spacing-abs-small) 0;
+		border-radius: calc(var(--border-radius) / 2);
 	}
 }
 
