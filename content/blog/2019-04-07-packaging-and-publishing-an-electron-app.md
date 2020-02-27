@@ -10,7 +10,7 @@ Electron simplifies the development of cross-platform desktop apps. Unfortunatel
 
 ### Packaging
 
-[`electron-builder`](https://github.com/electron-userland/electron-builder) is a third-party tool which facilitates the process of packaging an Electron app. The tool handles various tasks required for building a production-ready app, like the inclusion of native dependencies, code signing, upload to a download server, and the inclusion of an auto-updater tool.
+[`electron-builder`](https://github.com/electron-userland/electron-builder) is a third-party tool that facilitates the process of packaging an Electron app. The tool handles various tasks required for building a production-ready app, like the inclusion of native dependencies, code signing, upload to a download server, and the inclusion of an auto-updater tool.
 
 Run the following command to add `electron-builder` to your Electron project:
 
@@ -88,11 +88,11 @@ app.on("ready", () => {
 });
 ```
 
-If you're using GitHub Releases for distributing your app (explained later in this guide), that's all the configuration you need for the auto updater to work!
+If you're using GitHub Releases for distributing your app (explained later in this guide), that's all the configuration you need for the auto-updater to work!
 
 ### Code Signing
 
-For auto updating to work on macOS, your code needs to be signed:
+For auto-updating to work on macOS, your code needs to be signed:
 
 1. To obtain code signing certificates, you need to be enrolled in the [Apple Developer Program](https://developer.apple.com/programs) (costs annually).
 2. Install [Xcode](https://developer.apple.com/xcode) if necessary.
