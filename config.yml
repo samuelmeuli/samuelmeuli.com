@@ -12,7 +12,8 @@ pygmentsCodeFences: true
 pygmentsUseClasses: true
 
 params:
-  github: https://github.com/samuelmeuli/samuelmeuli.com
+  githubUrl: https://github.com/samuelmeuli/samuelmeuli.com
+  rssUrl: /blog/index.xml
   social:
     - name: github
       title: GitHub
@@ -25,7 +26,7 @@ params:
       url: "https://producthunt.com/@samuelmeuli"
     - name: rss
       title: RSS
-      url: /index.xml
+      url: /blog/index.xml
     - name: email
       title: Email
       email:
