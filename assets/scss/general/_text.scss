@@ -30,10 +30,6 @@ body {
 	font-weight: var(--font-weight-light);
 	font-family: "Inter", var(--font-family-system);
 
-	@supports (font-variation-settings: normal) {
-		font-family: "Inter var", sans-serif;
-	}
-
 	// Links: Colored, no underline
 	a {
 		color: var(--color-main);
