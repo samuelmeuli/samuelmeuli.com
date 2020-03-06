@@ -34,7 +34,7 @@
 			"yarn lint",
 			"yarn format"
 		],
-		"*.{html,js,json,jsx,md,ts,tsx,vue,yaml,yml}": [
+		"*.{js,json,jsx,md,ts,tsx,vue,yaml,yml}": [
 			"yarn format"
 		]
 	},
