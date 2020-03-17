@@ -1,6 +1,6 @@
 <!-- CSS -->
 {{ $scss := resources.Get "scss/main.scss" }}
-{{ $styles := $scss | resources.ToCSS | resources.Minify }}
+{{ $styles := $scss | resources.ToCSS | resources.PostCSS }}
 <style>{{ $styles.Content | safeCSS }}</style>
 
 <!-- Fonts -->

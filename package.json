@@ -20,8 +20,11 @@
 	"devDependencies": {
 		"@samuelmeuli/prettier-config": "^1.0.0",
 		"@samuelmeuli/stylelint-config": "^3.0.0",
+		"autoprefixer": "^9.7.4",
+		"cssnano": "^4.1.10",
 		"husky": "^4.2.3",
 		"lint-staged": "^10.0.8",
+		"postcss-cli": "^7.1.0",
 		"prettier": "^1.19.1",
 		"stylelint": "^13.2.0"
 	},
