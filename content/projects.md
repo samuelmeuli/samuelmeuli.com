@@ -19,6 +19,10 @@ The following is a selection of projects I've worked on. Most of my projects' co
 - [iconsets.org](https://iconsets.org) – Icon set discovery website for designers
 - [samuelmeuli.com](https://github.com/samuelmeuli/samuelmeuli.com) – My personal website
 
+#### Go Modules
+
+- [nbtohtml](https://github.com/samuelmeuli/nbtohtml) – Convert Jupyter Notebook files to HTML
+
 #### JavaScript Packages (NPM)
 
 - [react-magnifier](https://github.com/samuelmeuli/react-magnifier) – React image zoom component
