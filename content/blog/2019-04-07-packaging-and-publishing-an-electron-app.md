@@ -112,7 +112,7 @@ Whenever you want to publish a new version of your app, do the following:
 2. Run the `release` script with your GitHub token: `GH_TOKEN=... yarn release`. Your app will be built and the packages will be uploaded to GitHub. A release draft for the new version will be created.
 3. Open the GitHub page of your repository and find the new release draft with the download links for your app. Add a changelog and publish the release.
 
-That's it! Your Electron app is now ready to be downloaded from its GitHub page.
+That's it! Your Electron app is now ready to be downloaded from its GitHub page. If you additionally want to publish your app on the Mac App Store, see [this follow-up post]({{< ref "2019-04-09-publishing-an-electron-app-on-the-mac-app-store.md" >}}).
 
 #### Using GitHub Actions
 
