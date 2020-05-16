@@ -8,6 +8,8 @@ The following is a selection of projects I've worked on. Most of my projects' co
 
 ### Featured Projects
 
+{{<project name="Glance" date="2020-05-16" description="All-in-one Quick Look plugin" iconPath="/icons/projects/glance.png" appStoreURL="https://apps.apple.com/app/id1513574319" githubURL="https://github.com/samuelmeuli/glance">}}
+
 {{<project name="Mini Diary" date="2019-01-18" description="Simple and secure journal app for macOS, Windows and Linux" iconPath="/icons/projects/mini-diary.png" websiteURL="https://minidiary.app" githubURL="https://github.com/samuelmeuli/mini-diary">}}
 
 {{<project name="LyricsPoster" date="2018-07-13" description="Web app for creating artist posters written in their lyrics" iconPath="/icons/projects/lyrics-poster.svg" websiteURL="https://lyricsposter.net" githubURL="https://github.com/samuelmeuli/lyrics-poster">}}
