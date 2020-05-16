@@ -2,18 +2,20 @@
 	{{ $name := .Get "name" }}
 	{{ $date := .Get "date" | time }}
 	{{ $description := .Get "description" }}
-	{{ $website := .Get "website" }}
 	{{ $iconPath := .Get "iconPath" }}
+	{{ $websiteURL := .Get "websiteURL" }}
+	{{ $githubURL := .Get "githubURL" }}
+	{{ $productHuntURL := .Get "productHuntURL" }}
 
 	<!-- Icon -->
-	<a href="{{ $website }}" class="icon-link">
+	<a href="{{ $websiteURL }}" class="icon-link">
 		<img src="{{ $iconPath }}" alt="{{ $name }} icon" width="80" height="80" class="project-icon" />
 	</a>
 
 	<div class="project-info">
 		<!-- Project name -->
 		<h4>
-			<a href="{{ $website }}">
+			<a href="{{ $websiteURL }}">
 				{{ $name }}
 			</a>
 		</h4>
@@ -25,8 +27,12 @@
 			<!-- Links -->
 			<ul class="post-categories">
 				<li>
-					<a href="{{ .Params.Github }}">GitHub</a>,
-					<a href="{{ .Params.Producthunt }}">Product Hunt</a>
+					{{ if $githubURL }}
+						<a href="{{ $githubURL }}">GitHub</a>,
+					{{ end }}
+					{{ if $productHuntURL }}
+						<a href="{{ $productHuntURL }}">Product Hunt</a>
+					{{ end }}
 				</li>
 			</ul>
 		</div>
