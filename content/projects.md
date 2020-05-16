@@ -36,6 +36,7 @@ The following is a selection of projects I've worked on. Most of my projects' co
 
 #### Browser Extensions
 
+- [QuickStart](https://github.com/samuelmeuli/quick-start) – Bookmark-based browser start page
 - [GitHub Downloads](https://github.com/samuelmeuli/github-downloads) – See the number of downloads next to releases on GitHub
 
 #### Scripts
