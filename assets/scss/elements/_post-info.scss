@@ -3,26 +3,26 @@
 	font-size: var(--font-size-small);
 
 	@include large-screen {
-		> * {
-			display: inline-block;
-		}
+		// Use Flexbox to avoid whitespace issues
+		display: inline-flex;
 	}
 }
 
 .post-categories {
-	@include small-screen {
-		+ li::before {
-			content: " • ";
-		}
-	}
+	// Use Flexbox to avoid whitespace issues
+	display: inline-flex;
 
+	// Hide list symbols
+	list-style-type: none !important; // stylelint-disable-line declaration-no-important
+
+	// Separator between post date and categories
 	@include large-screen {
 		&::before {
 			content: " • ";
 		}
 	}
+}
 
-	li {
-		display: inline-block;
-	}
+.post-category:not(:last-child)::after {
+	content: ",\00a0"; // Space needs to be specified as escaped Unicode to avoid it being removed
 }

@@ -8,6 +8,11 @@
 @import "./general/icons";
 @import "./general/text";
 
+// Pages
+@import "./pages/404";
+@import "./pages/post-list";
+@import "./pages/post";
+
 // Elements
 @import "./elements/header";
 @import "./elements/footer";
@@ -15,8 +20,3 @@
 @import "./elements/post-info";
 @import "./elements/project";
 @import "./elements/code";
-
-// Pages
-@import "./pages/404";
-@import "./pages/post-list";
-@import "./pages/post";

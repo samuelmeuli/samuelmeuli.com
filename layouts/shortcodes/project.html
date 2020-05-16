@@ -4,18 +4,19 @@
 	{{ $description := .Get "description" }}
 	{{ $iconPath := .Get "iconPath" }}
 	{{ $websiteURL := .Get "websiteURL" }}
+	{{ $appStoreURL := .Get "appStoreURL" }}
 	{{ $githubURL := .Get "githubURL" }}
-	{{ $productHuntURL := .Get "productHuntURL" }}
+	{{ $defaultURL := $websiteURL | default $appStoreURL | default $githubURL }}
 
 	<!-- Icon -->
-	<a href="{{ $websiteURL }}" class="icon-link">
+	<a href="{{ $defaultURL }}" class="icon-link">
 		<img src="{{ $iconPath }}" alt="{{ $name }} icon" width="80" height="80" class="project-icon" />
 	</a>
 
 	<div class="project-info">
 		<!-- Project name -->
 		<h4>
-			<a href="{{ $websiteURL }}">
+			<a href="{{ $defaultURL }}">
 				{{ $name }}
 			</a>
 		</h4>
@@ -26,14 +27,15 @@
 
 			<!-- Links -->
 			<ul class="post-categories">
-				<li>
-					{{ if $githubURL }}
-						<a href="{{ $githubURL }}">GitHub</a>,
-					{{ end }}
-					{{ if $productHuntURL }}
-						<a href="{{ $productHuntURL }}">Product Hunt</a>
-					{{ end }}
-				</li>
+				{{ if $websiteURL -}}
+					<li class="post-category"><a href="{{ $websiteURL }}">Website</a></li>
+				{{- end -}}
+				{{- if $appStoreURL -}}
+					<li class="post-category"><a href="{{ $appStoreURL }}">App Store</a></li>
+				{{- end -}}
+				{{- if $githubURL -}}
+					<li class="post-category"><a href="{{ $githubURL }}">GitHub</a></li>
+				{{- end }}
 			</ul>
 		</div>
 
