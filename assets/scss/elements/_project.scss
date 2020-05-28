@@ -5,6 +5,10 @@
 		.project-name {
 			margin-bottom: var(--spacing-abs-very-small);
 		}
+
+		.project-metadata {
+			margin-bottom: var(--spacing-abs-very-small);
+		}
 	}
 
 	@include large-screen {
