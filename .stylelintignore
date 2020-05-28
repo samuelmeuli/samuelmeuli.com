@@ -1,0 +1,7 @@
+# TODO: Move config into `package.json` once supported
+# https://github.com/stylelint/stylelint/issues/3627
+
+node_modules/
+public/
+resources/
+themes/
