@@ -18,13 +18,16 @@
 		"format": "prettier --list-different \"**/*.{css,js,json,jsx,less,md,scss,ts,tsx,vue,yaml,yml}\"",
 		"format:fix": "yarn format --write"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"minireset.css": "^0.0.6"
+	},
 	"devDependencies": {
 		"@samuelmeuli/prettier-config": "^2.0.1",
 		"@samuelmeuli/stylelint-config": "^3.0.0",
 		"autoprefixer": "^9.8.0",
 		"cssnano": "^4.1.10",
 		"postcss-cli": "^7.1.1",
+		"postcss-import": "^12.0.1",
 		"prettier": "^2.0.5",
 		"stylelint": "^12.0.1"
 	},
