@@ -1,27 +1,25 @@
 .post-metadata {
 	font-size: var(--font-size-small);
+}
 
-	@include large-screen {
-		// Use Flexbox to avoid whitespace issues
-		display: flex;
-	}
+.post-date-created {
+	display: inline;
 }
 
 .post-category-list {
-	// Use Flexbox to avoid whitespace issues
-	display: inline-flex;
-
-	// Hide list symbols
-	list-style-type: none !important; // stylelint-disable-line declaration-no-important
+	display: inline;
 
 	// Separator between post date and categories
-	@include large-screen {
-		&::before {
-			content: " • ";
-		}
+	&::before {
+		content: "\2000\2022\2000";
 	}
 }
 
-.post-category:not(:last-child)::after {
-	content: ",\00a0"; // Space needs to be specified as escaped Unicode to avoid it being removed
+.post-category {
+	display: inline;
+
+	// Separator between post categories
+	&:not(:last-child)::after {
+		content: ",\0020"; // Space needs to be specified as escaped Unicode to avoid it being removed
+	}
 }

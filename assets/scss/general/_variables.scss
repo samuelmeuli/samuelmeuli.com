@@ -10,6 +10,27 @@ body {
 	--color-text: #585858;
 	--color-heading: #383b3f;
 
+	// Fonts (all screens)
+	--font-family-system: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica",
+		"Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--font-size-h4: 100%;
+	--font-size-small: 70%;
+	--font-weight-light: 300;
+	--font-weight-normal: 400;
+	--font-weight-bold: 600;
+	--line-height: 1.75;
+
+	// Spacing (all screens)
+	--spacing-abs-very-small: 6px;
+	--spacing-rel-small: calc(#{var(--spacing-abs-very-small)} + 1vw);
+	--spacing-rel-medium: calc(#{var(--spacing-abs-medium)} + 2vw);
+	--spacing-rel-large: calc(#{var(--spacing-abs-large)} + 5vw);
+
+	// Other
+	--border-radius: 5px;
+	--box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.025);
+	--transition: 0.3s;
+
 	// Colors (dark)
 	@media (prefers-color-scheme: dark) {
 		--color-background: #232323;
@@ -23,31 +44,33 @@ body {
 		--color-heading: #ececec;
 	}
 
-	// Fonts
-	--font-family-system: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica",
-		"Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	--font-size: 19px;
-	--font-size-h1: 230%;
-	--font-size-h2: 160%;
-	--font-size-h3: 120%;
-	--font-size-h4: 100%;
-	--font-size-small: 70%;
-	--font-weight-light: 300;
-	--font-weight-normal: 400;
-	--font-weight-bold: 600;
-	--line-height: 1.75;
+	// Fonts (small screens)
+	@include small-screen {
+		--font-size: 18px;
+		--font-size-h1: 170%;
+		--font-size-h2: 135%;
+		--font-size-h3: 110%;
+	}
 
-	// Spacing
-	--spacing-abs-very-small: 6px;
-	--spacing-abs-small: 15px;
-	--spacing-abs-medium: 30px;
-	--spacing-abs-large: 40px;
-	--spacing-rel-small: calc(#{var(--spacing-abs-very-small)} + 1vw);
-	--spacing-rel-medium: calc(#{var(--spacing-abs-medium)} + 2vw);
-	--spacing-rel-large: calc(#{var(--spacing-abs-large)} + 5vw);
+	// Fonts (large screens)
+	@include large-screen {
+		--font-size: 19px;
+		--font-size-h1: 230%;
+		--font-size-h2: 160%;
+		--font-size-h3: 120%;
+	}
 
-	// Other
-	--border-radius: 5px;
-	--box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.025);
-	--transition: 0.3s;
+	// Spacing (small screens)
+	@include small-screen {
+		--spacing-abs-small: 10px;
+		--spacing-abs-medium: 20px;
+		--spacing-abs-large: 30px;
+	}
+
+	// Spacing (large screens)
+	@include large-screen {
+		--spacing-abs-small: 15px;
+		--spacing-abs-medium: 30px;
+		--spacing-abs-large: 40px;
+	}
 }
