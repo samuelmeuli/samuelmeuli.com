@@ -1,7 +1,16 @@
 # TODO: Move config into `package.json` once supported
 # https://github.com/prettier/prettier/issues/3460
 
+# NPM
 node_modules/
+
+# Hugo output
 public/
 resources/
+
+# Hugo themes (Git submodules)
 themes/
+
+# Chroma themes
+assets/scss/elements/_code-dark.scss
+assets/scss/elements/_code-light.scss
