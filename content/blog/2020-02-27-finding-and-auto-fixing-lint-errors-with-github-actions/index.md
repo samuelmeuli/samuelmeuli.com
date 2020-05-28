@@ -22,6 +22,8 @@ These annotations, together with the action's **auto-fix feature**, make it easy
 
 To enable the Lint Action in your repository, create a GitHub Actions workflow in the `.github/workflows/` directory (e.g. named `lint.yml`). The file should use a structure similar to the following:
 
+{{<file-name>}}.github/workflows/lint.yml{{</file-name>}}
+
 ```yml
 name: Lint
 
@@ -59,6 +61,8 @@ Furthermore, the action can easily be extended to support other languages and to
 ### Showing Lint Errors on Commits/PRs
 
 For the Lint Action to work, you first need to install the linters you wish to use on the virtual machine. The following example shows how this is done for Python. Code is linted with Flake8 and formatted with Black:
+
+{{<file-name>}}.github/workflows/lint.yml{{</file-name>}}
 
 ```diff
   name: Lint
@@ -111,6 +115,8 @@ Besides showing lint errors, the Lint Action can also fix some of the issues aut
 Setting up auto-fixing is easy: All you need to do is set the action's `auto_fix` option to `true`.
 
 The `auto_fix` value can also be determined dynamically using [GitHub Actions' expression syntax](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/contexts-and-expression-syntax-for-github-actions). For instance, you might not want any auto-fix commits on your `master` branch. To only create such bot commits on PR branches, you can configure the action as follows:
+
+{{<file-name>}}.github/workflows/lint.yml{{</file-name>}}
 
 ```diff
   name: Lint

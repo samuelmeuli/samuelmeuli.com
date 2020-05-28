@@ -45,6 +45,8 @@ To get notarization to work, add the following options in your `package.json` fi
 
 Next, create or update your `build/entitlements.mac.plist` file with the following code signing entitlements, which are required for Electron to work:
 
+{{<file-name>}}build/entitlements.mac.plist{{</file-name>}}
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
