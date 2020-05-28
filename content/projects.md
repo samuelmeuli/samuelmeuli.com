@@ -18,40 +18,31 @@ The following is a selection of projects I've worked on. Most of my projects' co
 
 #### Websites
 
-- [iconsets.org](https://iconsets.org) – Icon set discovery website for designers
 - [samuelmeuli.com](https://github.com/samuelmeuli/samuelmeuli.com) – My personal website
+- [iconsets.org](https://iconsets.org) – Icon set discovery website for designers
 
-#### Go Modules
+#### Libraries
 
 - [nbtohtml](https://github.com/samuelmeuli/nbtohtml) – Convert Jupyter Notebook files to HTML
-
-#### JavaScript Packages (NPM)
-
 - [react-magnifier](https://github.com/samuelmeuli/react-magnifier) – React image zoom component
 - [Font Picker](https://github.com/samuelmeuli/font-picker) – Font selector component for Google Fonts
-- [Draft.js List Plugin](https://github.com/samuelmeuli/draft-js-list-plugin) – Better lists for Draft.js
-
-#### Python Packages (PyPI)
-
+- [SwiftExec](https://github.com/samuelmeuli/swift-exec) – Simple process execution with Swift
 - [python-wikibase](https://github.com/samuelmeuli/python-wikibase) – Wikibase queries and edits made easy
 - [anonymize-ip](https://github.com/samuelmeuli/anonymize-ip) – Python library for anonymizing IP addresses
+- [Draft.js List Plugin](https://github.com/samuelmeuli/draft-js-list-plugin) – Better lists for Draft.js
+
+#### Scripts
+
+- [tmignore](https://github.com/samuelmeuli/tmignore) – Exclude development files from Time Machine backups
 
 #### Browser Extensions
 
 - [QuickStart](https://github.com/samuelmeuli/quick-start) – Bookmark-based browser start page
 - [GitHub Downloads](https://github.com/samuelmeuli/github-downloads) – See the number of downloads next to releases on GitHub
 
-#### Scripts
-
-- [tmignore](https://github.com/samuelmeuli/tmignore) – Exclude development files from Time Machine backups
-
-#### GitHub Actions
+#### Other Projects
 
 - [Lint Action](https://github.com/samuelmeuli/lint-action) – GitHub Action for detecting and fixing linting errors
 - [Electron Builder Action](https://github.com/samuelmeuli/action-electron-builder) – GitHub Action for building and releasing Electron apps
-- [Maven Publish Action](https://github.com/samuelmeuli/action-maven-publish) – GitHub Action for publishing to the Maven Central Repository
-
-#### Themes
-
 - [Alfred System Theme](https://github.com/samuelmeuli/alfred-system-theme) – Alfred themes in style of Apple's macOS apps
 - [rEFInd Dark Theme](https://github.com/samuelmeuli/refind-theme-dark) – A simple, dark theme for rEFInd
