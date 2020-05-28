@@ -1,0 +1,14 @@
+.page-content {
+	p + p {
+		margin-top: var(--spacing-abs-small);
+	}
+
+	ol,
+	ul {
+		margin: var(--spacing-abs-small) 0 var(--spacing-abs-small) var(--spacing-abs-large);
+	}
+
+	ul {
+		list-style-type: disc;
+	}
+}

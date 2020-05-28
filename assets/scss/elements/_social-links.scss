@@ -1,10 +1,6 @@
 .social-links {
 	line-height: 1;
 
-	a {
-		cursor: pointer; // Display pointer for all links (even those without href)
-	}
-
 	li {
 		display: inline-block;
 	}
@@ -12,4 +8,9 @@
 	li + li {
 		margin-left: 20px;
 	}
+}
+
+.social-link {
+	// Display pointer for all links (even those without href)
+	cursor: pointer;
 }

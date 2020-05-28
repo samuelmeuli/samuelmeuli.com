@@ -1,3 +1,7 @@
+<!--
+	Partial for featured project. Includes icon, release date, links (e.g. to App Store and GitHub)
+	and description.
+-->
 <div class="project">
 	{{ $name := .Get "name" }}
 	{{ $date := .Get "date" | time }}
@@ -8,25 +12,24 @@
 	{{ $githubURL := .Get "githubURL" }}
 	{{ $defaultURL := $websiteURL | default $appStoreURL | default $githubURL }}
 
-	<!-- Icon -->
+	<!-- Project icon -->
 	<a href="{{ $defaultURL }}" class="icon-link">
 		<img src="{{ $iconPath }}" alt="{{ $name }} icon" width="80" height="80" class="project-icon" />
 	</a>
 
 	<div class="project-info">
 		<!-- Project name -->
-		<h4>
-			<a href="{{ $defaultURL }}">
-				{{ $name }}
-			</a>
-		</h4>
+		<h4 class="project-name"><a href="{{ $defaultURL }}">{{ $name }}</a></h4>
 
-		<div class="post-info">
+		<!-- Metadata: Same markup as in `post-metadata` partial -->
+		<div class="post-metadata">
 			<!-- Date (month and year) -->
-			<p>{{ $date.Format "January 2006" }}</p>
+			<p class="post-date-created">
+				<time datetime="{{ $date.Format "2006-01-02" }}">{{ $date.Format "January 2006" }}</time>
+			</p>
 
 			<!-- Links -->
-			<ul class="post-categories">
+			<ul class="post-category-list">
 				{{ if $websiteURL -}}
 					<li class="post-category"><a href="{{ $websiteURL }}">Website</a></li>
 				{{- end -}}
@@ -39,7 +42,7 @@
 			</ul>
 		</div>
 
-		<!-- Description -->
-		<p>{{ $description }}</p>
+		<!-- Project description -->
+		<p class="project-description">{{ $description }}</p>
 	</div>
 </div>

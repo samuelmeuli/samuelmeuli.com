@@ -9,14 +9,16 @@
 @import "./general/text";
 
 // Pages
+@import "./pages/page";
 @import "./pages/404";
-@import "./pages/post-list";
+@import "./pages/list";
 @import "./pages/post";
 
 // Elements
 @import "./elements/header";
 @import "./elements/footer";
+@import "./elements/navigation";
 @import "./elements/social-links";
-@import "./elements/post-info";
+@import "./elements/post-metadata";
 @import "./elements/project";
 @import "./elements/code";

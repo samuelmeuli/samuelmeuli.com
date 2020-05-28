@@ -1,0 +1,11 @@
+.navigation-item {
+	display: inline-block;
+}
+
+.navigation-item + .navigation-item {
+	margin-left: var(--spacing-abs-medium);
+}
+
+.navigation-item-active {
+	font-weight: var(--font-weight-bold);
+}

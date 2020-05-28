@@ -1,34 +1,18 @@
-header {
+.header {
+	padding: 0 var(--spacing-rel-small);
 	text-align: center;
 }
 
-.nav-item {
-	display: inline-block;
+.site-title {
+	margin-bottom: var(--spacing-abs-medium);
 }
 
-.nav-item + .nav-item {
-	margin-left: var(--spacing-abs-medium);
-}
-
-.nav-item-active {
-	font-weight: var(--font-weight-bold);
-}
-
-// Header on home page
-
-body:not(.home) header {
-	margin-bottom: var(--spacing-rel-medium);
-	padding: 0 var(--spacing-rel-small);
-
-	h1 {
-		margin-bottom: var(--spacing-abs-medium);
+.homepage {
+	.header {
+		margin-top: var(--spacing-rel-medium);
 	}
-}
 
-// Header on other pages
-
-.home header {
-	h1 {
-		margin: var(--spacing-rel-medium) 0;
+	.site-title {
+		margin-bottom: var(--spacing-rel-medium);
 	}
 }

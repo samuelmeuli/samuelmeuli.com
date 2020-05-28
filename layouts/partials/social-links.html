@@ -1,24 +1,26 @@
-{{ range . }}
-	<li>
-		<a
-			class="icon-link"
-			{{ if .email }}
-				onclick="sendEmail({{ .email.username }}, {{ .email.domain }})"
-			{{ else }}
-				href="{{ .url }}"
-			{{ end }}
-		>
-			<svg
-				viewBox="0 0 24 24"
-				width="30"
-				class="icon"
-				title="{{ .title }}"
+<ul class="social-links">
+	{{ range .Site.Params.social }}
+		<li>
+			<a
+				class="social-link icon-link"
+				{{ if .email }}
+					onclick="sendEmail({{ .email.username }}, {{ .email.domain }})"
+				{{ else }}
+					href="{{ .url }}"
+				{{ end }}
 			>
-				<use
-					xlink:href="/icons/social/{{ .name }}.svg#icon" {{/* SVG v1.1 (still required by Safari) */}}
-					href="/icons/social/{{ .name }}.svg#icon" {{/* SVG v2 */}}
-				/>
-			</svg>
-		</a>
-	</li>
-{{ end }}
+				<svg
+					viewBox="0 0 24 24"
+					width="30"
+					class="icon"
+					title="{{ .title }}"
+				>
+					<use
+						xlink:href="/icons/social/{{ .name }}.svg#icon" {{/* SVG v1.1 (still required by Safari) */}}
+						href="/icons/social/{{ .name }}.svg#icon" {{/* SVG v2 */}}
+					/>
+				</svg>
+			</a>
+		</li>
+	{{ end }}
+</ul>

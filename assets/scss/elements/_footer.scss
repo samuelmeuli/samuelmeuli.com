@@ -1,12 +1,7 @@
-body:not(.home) footer {
-	margin-top: var(--spacing-rel-medium);
+.footer {
+	padding: 0 var(--spacing-rel-small);
 }
 
-.footer-links {
+.social-links {
 	text-align: center;
-
-	// Imitate link for email (has no href)
-	.icon-email {
-		cursor: pointer;
-	}
 }

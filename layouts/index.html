@@ -1,8 +1,11 @@
+<!--
+	Override for homepage template: Content is omitted, header and footer are swapped.
+-->
 <!DOCTYPE html>
-<html lang="{{ $.Site.Language.Lang }}">
+<html lang="{{ .Site.Language.Lang }}">
 	{{ partial "head.html" . }}
 
-	<body class="home">
+	<body class="page homepage">
 		{{ partial "footer.html" . }}
 		{{ partial "header.html" . }}
 	</body>

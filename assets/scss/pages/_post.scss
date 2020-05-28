@@ -1,17 +1,14 @@
-.post-head {
-	text-align: center;
-}
-
 .post-title {
 	margin-bottom: var(--spacing-abs-small);
 }
 
-.post-head .post-info {
-	margin-bottom: var(--spacing-abs-large);
+.post .post-metadata {
+	justify-content: center;
+	margin-bottom: var(--spacing-abs-medium);
 }
 
-// Summary (first paragraph)
 .post-content {
+	// Post summary (first paragraph)
 	> p:first-child {
 		margin-bottom: var(--spacing-abs-large);
 		text-align: center;
@@ -24,6 +21,7 @@
 }
 
 .post-actions {
+	margin-top: var(--spacing-abs-large);
 	text-align: center;
 
 	li {

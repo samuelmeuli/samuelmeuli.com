@@ -1,5 +1,5 @@
 ---
 title: Blog
-menu: nav
+menu: main
 weight: 3
 ---

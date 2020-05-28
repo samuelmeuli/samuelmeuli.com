@@ -2,7 +2,7 @@
 	@include small-screen {
 		text-align: center;
 
-		h4 {
+		.project-name {
 			margin-bottom: var(--spacing-abs-very-small);
 		}
 	}
@@ -19,23 +19,23 @@
 			flex: 1;
 		}
 
-		h4 {
+		.project-name {
 			margin-bottom: 0;
 		}
 	}
 
 	// Remove heading spacing (cannot collapse into higher-level heading spacing)
-	h4 {
+	.project-name {
 		margin-top: 0;
 	}
 
 	// Remove list spacing
-	.post-categories {
+	.post-category-list {
 		margin: 0;
 	}
 }
 
-// Add removed heading spacing between adjacent projects
+// Add back heading spacing between adjacent projects
 .project + .project {
 	margin-top: var(--spacing-abs-medium);
 }

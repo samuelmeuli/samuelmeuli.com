@@ -1,7 +1,5 @@
 ---
 title: Home
-menu: nav
+menu: main
 weight: 1
 ---
-
-Welcome!

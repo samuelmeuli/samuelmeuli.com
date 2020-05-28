@@ -7,13 +7,14 @@ author:
   name: Samuel Meuli
   homepage: "https://samuelmeuli.com"
 
-# Syntax highlighting
-pygmentsCodeFences: true
-pygmentsUseClasses: true
+markup:
+  # Syntax highlighting
+  highlight:
+    # Style code blocks with custom stylesheets instead of inline CSS
+    noClasses: false
 
 params:
-  githubUrl: https://github.com/samuelmeuli/samuelmeuli.com
-  rssUrl: /blog/index.xml
+  # Social links for footer
   social:
     - name: github
       title: GitHub

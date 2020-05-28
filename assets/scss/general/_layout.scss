@@ -3,32 +3,24 @@ html {
 }
 
 body {
-	padding: var(--spacing-rel-large) 0 var(--spacing-rel-medium);
+	padding: var(--spacing-rel-large) 0;
 	background: var(--color-background);
 
-	&.home {
+	// Center page content on homepage
+	&.homepage {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		height: 100%;
-		padding: 0 var(--spacing-rel-small);
 	}
 }
 
 main {
 	width: 800px;
 	max-width: 100%;
-	margin: 0 auto;
+	margin: var(--spacing-rel-medium) auto;
 	padding: var(--spacing-rel-medium);
 	background: var(--color-background-light);
 	border-radius: var(--border-radius);
 	box-shadow: var(--box-shadow);
-}
-
-hr {
-	width: 300px;
-	max-width: 100%;
-	margin: calc(2 * var(--spacing-abs-large)) auto var(--spacing-abs-large);
-	border: 0;
-	border-top: 1.5px solid var(--color-text);
 }

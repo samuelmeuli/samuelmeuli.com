@@ -1,14 +1,13 @@
-.post-info {
-	margin-bottom: var(--spacing-abs-very-small);
+.post-metadata {
 	font-size: var(--font-size-small);
 
 	@include large-screen {
 		// Use Flexbox to avoid whitespace issues
-		display: inline-flex;
+		display: flex;
 	}
 }
 
-.post-categories {
+.post-category-list {
 	// Use Flexbox to avoid whitespace issues
 	display: inline-flex;
 

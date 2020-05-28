@@ -1,6 +1,6 @@
 ---
 title: Projects
-menu: nav
+menu: main
 weight: 2
 ---
 
