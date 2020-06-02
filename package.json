@@ -12,7 +12,7 @@
 	"private": true,
 	"scripts": {
 		"start": "hugo server --buildDrafts --buildFuture --port 3000",
-		"build": "hugo --buildFuture --minify",
+		"build": "hugo --buildFuture",
 		"lint": "stylelint --max-warnings 0 \"**/*.{css,sass,scss}\"",
 		"lint:fix": "yarn lint --fix",
 		"format": "prettier --list-different \"**/*.{css,js,json,jsx,less,md,scss,ts,tsx,vue,yaml,yml}\"",
